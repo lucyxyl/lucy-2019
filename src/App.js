@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import logo from './logo.svg';
-import logow from './logo-w.svg';
-import inlogo from './in-logo.svg';
+import logo from './Image/logo.svg';
+import logow from './Image/logo-w.svg';
+import inlogo from './Image/in-logo.svg';
 
-import Work from './Work';
-import Intro from './Intro';
+import Work from './Components/Work';
+import Intro from './Components/Intro';
+import Divider from './Components/Divider';
 
 import './App.css';
 
@@ -29,6 +30,7 @@ class App extends Component {
 
         <Content>
           <Intro />
+          <Divider />
           <Work />
         </Content>
 
@@ -90,8 +92,7 @@ const Page = styled.li`
 `;
 
 const Content = styled.div`
-  // height: 20em;
-  // background: pink;
+  padding: 2em 20em;
 `;
 
 const Footer = styled.div`
@@ -111,10 +112,6 @@ const FooterBar = styled.ul`
   justify-content: space-between;
 `;
 
-const FooterElement = styled.li`
-  
-`;
-
 const FooterTextWrap = styled.div`
   padding-bottom: 4em;
 
@@ -126,6 +123,10 @@ const FeatureText = styled.p`
 	color: ${props => props.primary ? "#FFFFFF" : "#222226"};
   font-size: 1.6em;
   line-height: 1.6em;
+`;
+
+const FooterElement = styled.li`
+  
 `;
 
 
