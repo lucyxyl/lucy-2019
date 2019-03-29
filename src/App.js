@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import { withRouter } from 'react-router'
 import styled from 'styled-components';
-// import { StickyContainer, Sticky } from 'react-sticky';
+
 
 import logo from './Image/logo.svg';
 import logow from './Image/logo-w.svg';
@@ -17,6 +17,8 @@ import Project3 from './Pages/Project-3';
 
 
 import './App.css';
+
+
 
 class ScrollToTop extends Component {
   componentDidUpdate(prevProps) {
@@ -36,9 +38,6 @@ const App = () => (
     <ScrollToTopConnected>
     <div>
 
-      {/* <StickyContainer>
-        <Sticky>
-          {({style}) =>( */}
         <Nav>
           <Menu>
             <Logo>
@@ -51,10 +50,7 @@ const App = () => (
             <Page><Link to="/about/">about</Link></Page>
           </Menu>
         </Nav>
-      {/* )}
-    </Sticky>
-  </StickyContainer>
-    */}
+
 
 
       <Route path="/" exact component={Index} />

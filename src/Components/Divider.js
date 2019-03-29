@@ -1,12 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 const Divider = () => {
-    return (
+  return (
+    <div>
+      <ScrollableAnchor id={'work'}>
         <SectionDivider>
-            <SectionDividerBg>Selected Work</SectionDividerBg>
+          <SectionDividerBg>Selected Work</SectionDividerBg>
         </SectionDivider>
-    );
+      </ScrollableAnchor>
+    </div>  
+   
+  );
 }
 
 const SectionDivider = styled.h4`

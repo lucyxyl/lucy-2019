@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Appneta1 from '.././Image/Appneta1.png';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 const Project = props => (
