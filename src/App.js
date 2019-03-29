@@ -1,78 +1,97 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { withRouter } from 'react-router'
 import styled from 'styled-components';
+// import { StickyContainer, Sticky } from 'react-sticky';
+
 import logo from './Image/logo.svg';
 import logow from './Image/logo-w.svg';
 import inlogo from './Image/in-logo.svg';
 
-import Work from './Components/Work';
-import Intro from './Components/Intro';
-import Divider from './Components/Divider';
+import Nibbles from './Pages/Nibbles';
+import About from './Pages/About';
+import Index from './Pages/Index';
+import Project1 from './Pages/Project-1';
+import Project2 from './Pages/Project-2';
+import Project3 from './Pages/Project-3';
+
 
 import './App.css';
 
-class App extends Component {
+class ScrollToTop extends Component {
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0)
+    }
+  }
   render() {
-    return (
-      <div className="App">
-        <Nav>
-          <Menu>
-              <Logo>
-                <a href="/">
-                  <img src={logo} alt="logo"/>
-                </a>
-              </Logo>
-              <Page><a href="/">work</a></Page>
-              <Page><a href="/">nibbles</a></Page>
-              <Page><a href="/">about</a></Page>
-          </Menu>
-        </Nav>
-
-
-        <Content>
-          <Intro />
-          <Divider />
-          <Work />
-        </Content>
-
-
-        <Footer>
-          <FooterWrapper>
-            <FooterTextWrap>
-              <FeatureText primary>
-                Glad you stayed for the ride so far.
-                <br/><br/>
-                Find out more about my journey, philosophy and my dog in the About section. 
-                Of course, if you want a nice TLDR, feel free to visit my resume.
-              </FeatureText>
-            </FooterTextWrap>
-              
-            <FooterBar>
-             <FooterElement>
-                <img src={logow} alt="light logo"/>
-              </FooterElement>
-              <FooterElement>
-                <a href="https://github.com/lucyxyl/lucy-2019" target="_blank">
-                  <FeatureText primary>Design & Code by Lucy.</FeatureText>
-                </a>
-              </FooterElement>
-              <FooterElement>
-                <a href="https://www.linkedin.com/in/lucyxylin/" target="_blank">
-                  <img src={inlogo} alt="linkedin logo"/>
-                </a>
-              </FooterElement>
-            </FooterBar>
-            
-          </FooterWrapper>
-        </Footer>
-
-      </div>
-    );
+    return this.props.children
   }
 }
+const ScrollToTopConnected = withRouter(ScrollToTop)
+
+
+const App = () => (
+  <Router>
+    <ScrollToTopConnected>
+    <div>
+
+      {/* <StickyContainer>
+        <Sticky>
+          {({style}) =>( */}
+        <Nav>
+          <Menu>
+            <Logo>
+              <Link to="/">
+                <img src={logo} alt="logo"/>
+              </Link>
+            </Logo>
+            <Page><Link to="/">work</Link></Page>
+            <Page><Link to="/nibbles/">nibbles</Link></Page>
+            <Page><Link to="/about/">about</Link></Page>
+          </Menu>
+        </Nav>
+      {/* )}
+    </Sticky>
+  </StickyContainer>
+    */}
+
+
+      <Route path="/" exact component={Index} />
+      <Route path="/nibbles/" component={Nibbles} />
+      <Route path="/about/" component={About} />
+      <Route path="/appneta-search/" component={Project1} />
+      <Route path="/appneta-visualization/" component={Project2} />
+      <Route path="/intuitive-ecosystem/" component={Project3} />
+      {/* <Route path="/intuitive-sales-content/" component={Project4} />
+      <Route path="/scad-accessibility/" component={Project5} /> */}
+
+
+      <Footer>
+        <FooterBar>
+        <FooterElement>
+            <img src={logow} alt="light logo"/>
+          </FooterElement>
+          <FooterElement>
+            <a href="https://github.com/lucyxyl/lucy-2019" target="_blank">
+              <FeatureText primary>Design & Code by Lucy.</FeatureText>
+            </a>
+          </FooterElement>
+          <FooterElement>
+            <a href="https://www.linkedin.com/in/lucyxylin/" target="_blank">
+              <img src={inlogo} alt="linkedin logo"/>
+            </a>
+          </FooterElement>
+        </FooterBar>
+      </Footer>
+      </div>
+    </ScrollToTopConnected>
+      
+  </Router>
+)
 
 const Nav = styled.nav`
   padding: 2em 20em;
-  // box-shadow: 0 2px 2px #EEEEEE;
 `; 
 
 const Menu = styled.ul`
@@ -91,18 +110,9 @@ const Page = styled.li`
   font-size: 1.2em;
 `;
 
-const Content = styled.div`
-  padding: 2em 20em;
-`;
-
 const Footer = styled.div`
   background: #222226;
-
-`;
-
-const FooterWrapper = styled.div`
   padding: 4em 20em;
-
 `;
 
 const FooterBar = styled.ul`
@@ -112,12 +122,6 @@ const FooterBar = styled.ul`
   justify-content: space-between;
 `;
 
-const FooterTextWrap = styled.div`
-  padding-bottom: 4em;
-
-`;
-
-
 const FeatureText = styled.p`
   background:${props => props.primary ? "#222226" : "#FFFFFF"};
 	color: ${props => props.primary ? "#FFFFFF" : "#222226"};
@@ -126,7 +130,6 @@ const FeatureText = styled.p`
 `;
 
 const FooterElement = styled.li`
-  
 `;
 
 

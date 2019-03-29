@@ -1,18 +1,18 @@
 h1, h2 {
   font-family: minionBold;
-  color: #17021E;
+  color: #222226;
 }
-p, .pfeature, .pregular, .pquote {
+p, .pfeature, .pregular {
   font-family: minionRegular;
-  color: #17021E;
+  color: #222226;
 }
 button {
   font-family: minionBold;
-  background-color: white;
+  background-color: none;
   color: #222226;
   border: none;
 }
-h3, h4 {
+h3, h4, h5 {
   font-family: 'Hind', sans-serif;
 }
 
@@ -28,31 +28,15 @@ h3 {
   font-weight: 600;
   line-height: 2em;
 }
-h4 {
+h4, h5 {
   font-size: 1.4em;
   color: #716F7D;
-  text-transform: uppercase;
   font-weight: 400;
 }
-.pfeature {
-  font-size: 1.8em;
-  line-height: 1.6em;
-}
-.pregular, .pquote{
-  font-size: 2.2em;
-}
-.pquote {
-  text-align: center;
-}
+h4 {
+  text-transform: uppercase;
 
-.white {
-  color: #FFFFFF;
 }
-
-.centertext {
-  text-align: center;
-}
-
 
 img {
   vertical-align: bottom;

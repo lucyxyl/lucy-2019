@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Nibbles = () => {
+const Project2 = () => {
   return (
     <Content>
-      <h1>Nibbles</h1>
+      <h1>Project 2</h1>
     </Content>
   );
 }
+
 
 const Content = styled.div`
   padding: 2em 20em;
@@ -19,4 +20,4 @@ const Content = styled.div`
 
 
 
-export default Nibbles;
+export default Project2;
