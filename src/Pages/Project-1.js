@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import ProtectedProject from '../Components/ProtectedProject';
 
 
 const Project1 = () => {
@@ -11,7 +10,6 @@ const Project1 = () => {
         <FeatureText>
           Faced with expanding customer deployments, the previous user experience of the network-performance-monitoring tool was no longer scalable. The product team identified search as a starting point. With a small and nimble design team, while my co-designer focused on the design of currently-pushing features, I was freed up to rethink the query experience as a foundation to resolve the scalability bottlenecks. In 6 months, I collaborated with the product, engineering and customer support to:
         </FeatureText>
-        <ProtectedProject />
     </Content>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Appneta1 from '.././Image/Appneta1.png';
+import Appneta1 from '.././Image/Project1_DarkCover.png';
 import {Link} from 'react-router-dom';
 
 

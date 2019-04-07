@@ -1,36 +1,56 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link, Redirect, withRouter} from 'react-router-dom';
 
 
-// const Protected = () => <h3>Protected</h3>;
+const Protected = () => <h3>Protected</h3>;
+const Public = () => <h3>Public</h3>;
 
-class Enter extends React.Component {
+const fakeAuth = {
+  isAuthenticated: false,
+  authenticate(cb) {
+    this.isAuthenticated = true
+    setTimeout(cb, 100)
+  },
+  signout(cb) {
+    this.isAuthenticated = false
+    setTimeout(cb, 100)
+  }
+}
+
+
+class Login extends React.Component {
   render() {
     return (
       <div>
-        <form>
-          Password <br/>
-          <input type = 'password' name='pwd' />
-          <input type = 'submit' />
-        </form>
+        LOGIN
       </div>
     )
   }
 }
+
+const PrivateRoute = ({ component: Component, ...rest }) => (
+  <Route {...rest} render={(props) => (
+    fakeAuth.isAuthenticated === true
+      ? <Component {...props} />
+      : <Redirect to='/login' />
+  )} />
+)
 
 class ProtectedProject extends Component {
   render() {
     return (
       <Router>
         <div>
-          <h4>
-            Enter password to read the rest, or reach out to xinyu.lin.lucy@gmail.com
-          </h4>
+          
           <ul>
-            <li><Link to ='/appneta-search-protected'>Protected Page</Link></li>
+            <li><Link to ='/public'>Public Page</Link></li>
+            <li><Link to ='/protected'>Protected Page</Link></li>
           </ul>
 
-          <Route path = '/appneta-search-enter' component = {Enter} />
+          <Route path = '/public' component = {Public} />
+          <Route path = '/login' component = {Login} />
+          <PrivateRoute path = '/protected' component = {Protected} />
+
         </div>
       </Router>
     )
