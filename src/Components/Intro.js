@@ -38,7 +38,7 @@ const IntroMiddle = styled.div`
   padding: 0 0 2em 0;
 `; 
 
-const Subtitle = styled.h4`
+const Subtitle = styled.h6`
   line-height: ${props => props.line ? "0.1em" : "4em"};
   padding-left: ${props => props.gap ? "1em" : "0"};
   border-bottom: ${props => props.line ? "1px solid #D0D0D0" : "none"};
@@ -64,13 +64,18 @@ const Button = styled.button`
   margin-left: auto;
 `;
 
+const Title = styled.p`
+  font-family: minionBold;
+  font-size: 4em;
+  color: #222226;
+`; 
+
 //no style given
 
 const IntroSection = styled.div`
 `; 
 
-const Title = styled.h1`
-`; 
+
 const IntroDetails = styled.div`
 `; 
 

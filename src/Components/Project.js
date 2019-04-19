@@ -61,10 +61,12 @@ const Title = styled.h3`
   left: 0em;
   background: #FFFFFF;
   padding: 0 0.6em 0 0.2em;
+  // box-shadow: 6px -6px 0px 0px rgba(34,34,38,1);
 `; 
 
-const Subtitle = styled.h4`
+const Subtitle = styled.h6`
 `;
+
 const FeatureText = styled.p`
   color: #222226;
   font-size: 1.6em;

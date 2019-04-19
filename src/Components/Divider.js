@@ -15,7 +15,7 @@ const Divider = () => {
   );
 }
 
-const SectionDivider = styled.h4`
+const SectionDivider = styled.h6`
     width: 100%; 
     text-align: center; 
     border-bottom: 1px solid #D0D0D0; 

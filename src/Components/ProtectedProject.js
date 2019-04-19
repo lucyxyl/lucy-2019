@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Link, Redirect, withRouter} from 'react-router-dom';
 
 
-const Protected = () => <h3>Protected</h3>;
-const Public = () => <h3>Public</h3>;
+const Protected = () => <h3>Protected<h3/>;
+const Public = () => <h3>Public<h3/>;
 
 const fakeAuth = {
   isAuthenticated: false,
