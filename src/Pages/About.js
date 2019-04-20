@@ -11,7 +11,8 @@ const About = () => {
 
 
 const Content = styled.div`
-  padding: 2em 20em;
+  width: 60%;
+  margin: 0 auto;
   background: pink;
   height: 40em;
 `; 

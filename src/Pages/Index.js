@@ -23,7 +23,8 @@ const Index = () => {
 
 
 const Content = styled.div`
-  padding: 2em 20em;
+  width: 60vw;
+  margin: 0 auto;
 `;
 
 

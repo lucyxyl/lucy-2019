@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="442px" height="442px" viewBox="0 0 442 442" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.0" transform="translate(-489.000000, -13896.000000)">
+            <g id="Group-13" transform="translate(489.000000, 13896.000000)">
+                <circle id="Oval-4" fill="#F5F5F5" fill-rule="nonzero" cx="221" cy="221" r="221"></circle>
+                <circle id="Oval-4-Copy" fill="#E6E6E6" fill-rule="nonzero" cx="273.5" cy="221.5" r="154.5"></circle>
+                <circle id="Oval-4-Copy-3" stroke="#222226" fill-rule="nonzero" cx="323" cy="230" r="95"></circle>
+                <circle id="Oval-4-Copy-2" fill="#222226" fill-rule="nonzero" cx="324.5" cy="229.5" r="82.5"></circle>
+                <text id="Director" font-family="Monaco" font-size="20" font-weight="normal" fill="#222226">
+                    <tspan x="128.492188" y="209">Director</tspan>
+                </text>
+                <text id="N.E." font-family="Monaco" font-size="20" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="300.496094" y="227">N.E.</tspan>
+                </text>
+                <text id="Primary" font-family="Monaco" font-size="16" font-weight="normal" fill="#F8E71C">
+                    <tspan x="289.394531" y="256">Primary</tspan>
+                </text>
+                <text id="Secondary" font-family="Monaco" font-size="16" font-weight="normal" fill="#947911">
+                    <tspan x="128.292969" y="238">Secondary</tspan>
+                </text>
+                <text id="C-Leader-Copy" font-family="Monaco" font-size="20" font-weight="normal" fill="#222226">
+                    <tspan x="13.4921875" y="183">C-Leader</tspan>
+                </text>
+                <text id="Tertiary" font-family="Monaco" font-size="16" font-weight="normal" fill="#947911">
+                    <tspan x="13.09375" y="212">Tertiary</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

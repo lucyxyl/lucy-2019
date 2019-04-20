@@ -19,7 +19,6 @@ import Project3 from './Pages/Project-3';
 import './App.css';
 
 
-
 class ScrollToTop extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
@@ -47,7 +46,7 @@ const App = () => (
             </Logo>
             <Page><Link to="/">work</Link></Page>
             <Page><Link to="/nibbles/">nibbles</Link></Page>
-            <Page><Link to="/about/">about</Link></Page>
+            <Page last><Link to="/about/">about</Link></Page>
           </Menu>
         </Nav>
 
@@ -69,9 +68,9 @@ const App = () => (
             <img src={logow} alt="light logo"/>
           </FooterElement>
           <FooterElement>
-            <a href="https://github.com/lucyxyl/lucy-2019" target="_blank">
-              <FeatureText primary>Design & Code by Lucy.</FeatureText>
-            </a>
+            {/* <a href="https://github.com/lucyxyl/lucy-2019" target="_blank"> */}
+            <FeatureText primary>Design & Code by Lucy.</FeatureText>
+            {/* </a> */}
           </FooterElement>
           <FooterElement>
             <a href="https://www.linkedin.com/in/lucyxylin/" target="_blank">
@@ -87,7 +86,9 @@ const App = () => (
 )
 
 const Nav = styled.nav`
-  padding: 2em 20em;
+  padding: 2em 0;
+  width: 60%;
+  margin: 0 auto;
 `; 
 
 const Menu = styled.ul`
@@ -100,7 +101,7 @@ const Logo = styled.li`
 `;
 
 const Page = styled.li`
-  padding: 0.24em 1em;
+  padding: ${props => props.last ? "0.24em 0 0.24em 1em" : "0.24em 1em"};
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.2em;
@@ -108,7 +109,7 @@ const Page = styled.li`
 
 const Footer = styled.div`
   background: #222226;
-  padding: 4em 20em;
+  padding: 4em 0;
 `;
 
 const FooterBar = styled.ul`
@@ -116,6 +117,8 @@ const FooterBar = styled.ul`
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
 `;
 
 const FeatureText = styled.p`

@@ -21,14 +21,14 @@ const Project = props => (
       <ProjectDetailsRight>
         <EnterButton>
           <Link to = {props.link}>
-            <WhiteLink>Enter</WhiteLink>
+            <WhiteLink>
+              <ion-icon size="large" name="md-eye"/>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              <ion-icon size="large" name="ios-arrow-round-forward"/>
+            </WhiteLink>
           </Link>
         </EnterButton>
       </ProjectDetailsRight>
     </ProjectDetails>
-
-
-
   </ProjectSection> 
 
 );
@@ -37,7 +37,6 @@ const ProjectSection = styled.div`
   display: flex;
   flex-direction: column;
   margin: 6em 0;
-
 `;
 
 const ProjectImg = styled.div`
@@ -49,11 +48,9 @@ const ProjectImg1 = styled.img`
   width: 100%;
 `;
 
-
 const ProjectDetails = styled.div`
   display: flex;
 `;
-
 
 const Title = styled.h3`
   position: absolute;
@@ -61,22 +58,21 @@ const Title = styled.h3`
   left: 0em;
   background: #FFFFFF;
   padding: 0 0.6em 0 0.2em;
-  // box-shadow: 6px -6px 0px 0px rgba(34,34,38,1);
 `; 
 
 const Subtitle = styled.h6`
 `;
 
 const FeatureText = styled.p`
-  color: #222226;
-  font-size: 1.6em;
-  line-height: 1.6em;
+  color: #48474C;
+  font-size: 1.4em;
+
 `;
 const EnterButton = styled.button`
   background-color: #222226;
-  font-size: 1.6em;
-  border-radius: 2em;
-  padding: 1em 2.6em;
+  border-radius: 8em;
+  padding: 2em 2.6em;
+  color: 
 `; 
 
 const ProjectDetailsLeft = styled.div`

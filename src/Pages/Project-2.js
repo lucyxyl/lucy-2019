@@ -11,11 +11,8 @@ const Project2 = () => {
   );
 }
 
-
-
-
 const Content = styled.div`
-  padding: 2em 20em;
+  width: 60%;
   background: pink;
   height: 40em;
 `; 

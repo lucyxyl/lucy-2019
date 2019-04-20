@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.0" transform="translate(-335.000000, -16980.000000)">
+            <g id="Group-7" transform="translate(335.000000, 16980.000000)">
+                <rect id="Rectangle-5" fill="#F2F2F2" fill-rule="nonzero" x="0" y="0" width="800" height="600"></rect>
+                <g id="Group-5" transform="translate(66.000000, 39.000000)">
+                    <text id="Tags" font-family="Monaco" font-size="18" font-weight="normal" fill="#222226">
+                        <tspan x="33" y="27">Tags</tspan>
+                    </text>
+                    <text id="Saved-Filter" font-family="Monaco" font-size="18" font-weight="normal" fill="#222226">
+                        <tspan x="263" y="27">Saved Filter</tspan>
+                    </text>
+                    <text id="Path-Attributes" font-family="Monaco" font-size="18" font-weight="normal" fill="#222226">
+                        <tspan x="506" y="27">Path Attributes</tspan>
+                    </text>
+                    <text id="Search" font-family="Monaco" font-size="18" font-weight="normal" fill="#222226">
+                        <tspan x="318" y="378">Search</tspan>
+                    </text>
+                    <text id="Creation" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                        <tspan x="33" y="73">Creation</tspan>
+                    </text>
+                    <text id="Creation-Copy" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                        <tspan x="263" y="73">Creation</tspan>
+                    </text>
+                    <text id="Apply-as-Filter" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                        <tspan x="33" y="102">Apply as Filter</tspan>
+                    </text>
+                    <text id="Apply-as-Filter-Copy" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                        <tspan x="263" y="102">Apply as Filter</tspan>
+                    </text>
+                    <text id="Apply-as-Filter-Copy-2" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226" text-decoration="line-through">
+                        <tspan x="506" y="73">Apply as Filter</tspan>
+                    </text>
+                    <text id="Save-Filter" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                        <tspan x="506" y="102">Save Filter</tspan>
+                    </text>
+                    <text id="Edit-parameters" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226" text-decoration="line-through">
+                        <tspan x="506" y="131">Edit parameters</tspan>
+                    </text>
+                    <text id="Edit" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                        <tspan x="33" y="131">Edit</tspan>
+                    </text>
+                    <text id="Add/Remove" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                        <tspan x="47" y="160">Add/Remove</tspan>
+                    </text>
+                    <text id="Delete" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                        <tspan x="273" y="160">Delete</tspan>
+                    </text>
+                    <text id="Rename" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                        <tspan x="47" y="189">Rename</tspan>
+                    </text>
+                    <text id="Rename-Copy" font-family="Monaco" font-size="16" font-weight="normal" fill="#ABABAB">
+                        <tspan x="273" y="189">Rename</tspan>
+                    </text>
+                    <text id="Save" font-family="Monaco" font-size="16" font-weight="normal" fill="#ABABAB">
+                        <tspan x="273" y="250">Save</tspan>
+                    </text>
+                    <text id="Save-As" font-family="Monaco" font-size="16" font-weight="normal" fill="#ABABAB">
+                        <tspan x="273" y="279">Save As</tspan>
+                    </text>
+                    <text id="Edit-Parameters" font-family="Monaco" font-size="16" font-weight="normal" fill="#ABABAB">
+                        <tspan x="273" y="221">Edit Parameters</tspan>
+                    </text>
+                    <text id="Edit-Copy" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                        <tspan x="263" y="131">Edit</tspan>
+                    </text>
+                    <path id="Path-2" d="M346.5,69 L355.5,73.5 L355.5,64.5 L346.5,69 Z M355,69.5 L447.026345,69.5 L446.526345,69 L446.526345,97.6467279 L446.526345,98.1467279 L447.026345,98.1467279 L498.157868,98.1467279 L498.157868,97.1467279 L447.026345,97.1467279 L447.526345,97.6467279 L447.526345,69 L447.526345,68.5 L447.026345,68.5 L355,68.5 L355,69.5 Z" fill="#222226" fill-rule="nonzero"></path>
+                    <text id="Type-to-pull-up" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                        <tspan x="278" y="424">Type to pull up</tspan>
+                    </text>
+                    <text id="Select-to-pull-up" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                        <tspan x="268" y="456">Select to pull up</tspan>
+                    </text>
+                    <path d="M33.5,0.25 L70.5,0.25" id="Line-6" stroke="#222226" stroke-width="3" stroke-linecap="square" fill-rule="nonzero"></path>
+                    <path d="M263.5,0.25 L300.5,0.25" id="Line-6-Copy" stroke="#222226" stroke-width="3" stroke-linecap="square" fill-rule="nonzero"></path>
+                    <path d="M318.5,350.25 L355.5,350.25" id="Line-6-Copy-3" stroke="#222226" stroke-width="3" stroke-linecap="square" fill-rule="nonzero"></path>
+                    <path d="M506.5,0.25 L543.5,0.25" id="Line-6-Copy-2" stroke="#222226" stroke-width="3" stroke-linecap="square" fill-rule="nonzero"></path>
+                    <g id="Group-3" transform="translate(206.000000, 417.000000)">
+                        <circle id="Oval-6" fill="#F8E71C" fill-rule="nonzero" cx="17.5" cy="17.5" r="17.5"></circle>
+                        <text id="1" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                            <tspan x="13" y="24">1</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-3-Copy" transform="translate(366.000000, 51.000000)">
+                        <circle id="Oval-6" fill="#F8E71C" fill-rule="nonzero" cx="17.5" cy="17.5" r="17.5"></circle>
+                        <text id="2" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                            <tspan x="13" y="24">2</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-3-Copy-2" transform="translate(117.000000, 51.000000)">
+                        <circle id="Oval-6" fill="#F8E71C" fill-rule="nonzero" cx="17.5" cy="17.5" r="17.5"></circle>
+                        <text id="3" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                            <tspan x="13" y="24">3</tspan>
+                        </text>
+                    </g>
+                    <path id="Path-3" d="M198.816202,440.865689 L189.816202,436.365689 L189.816202,445.365689 L198.816202,440.865689 Z M25.7275862,96.7357771 L0.317946858,96.7357771 L-0.182053142,96.7357771 L-0.182053142,97.2357771 L-0.182053142,440.865689 L-0.182053142,441.365689 L0.317946858,441.365689 L190.316202,441.365689 L190.316202,440.365689 L0.317946858,440.365689 L0.817946858,440.865689 L0.817946858,97.2357771 L0.317946858,97.7357771 L25.7275862,97.7357771 L25.7275862,96.7357771 Z" fill="#222226" fill-rule="nonzero"></path>
+                    <path id="Path-4" d="M221.870217,408.645357 L226.370217,399.645357 L217.370217,399.645357 L221.870217,408.645357 Z M253.028085,96.9428678 L221.870217,96.9428678 L221.370217,96.9428678 L221.370217,97.4428678 L221.370217,400.145357 L222.370217,400.145357 L222.370217,97.4428678 L221.870217,97.9428678 L253.028085,97.9428678 L253.028085,96.9428678 Z" fill="#222226" fill-rule="nonzero"></path>
+                    <g id="Group-3-Copy-3" transform="translate(312.000000, 109.000000)">
+                        <circle id="Oval-6" fill="#F8E71C" fill-rule="nonzero" cx="17.5" cy="17.5" r="17.5"></circle>
+                        <text id="4" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                            <tspan x="13" y="24">4</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-3-Copy-4" transform="translate(82.000000, 109.000000)">
+                        <circle id="Oval-6" fill="#F8E71C" fill-rule="nonzero" cx="17.5" cy="17.5" r="17.5"></circle>
+                        <text id="5" font-family="Monaco" font-size="16" font-weight="normal" fill="#222226">
+                            <tspan x="13" y="24">5</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group-4" transform="translate(504.000000, 560.000000)" font-family="Monaco" font-size="16" font-weight="normal">
+                    <text id="Later-phases" fill="#ABABAB">
+                        <tspan x="0" y="16">Later phases</tspan>
+                    </text>
+                    <text id="Already-exists" fill="#222226" text-decoration="line-through">
+                        <tspan x="130" y="16">Already exists</tspan>
+                    </text>
+                </g>
+                <rect id="Rectangle-7" fill="#FFFFFF" fill-rule="nonzero" x="0" y="537" width="800" height="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
