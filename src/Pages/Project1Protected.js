@@ -21,10 +21,13 @@ import Fig15 from '.././Image/Project1_Fig15.png';
 import Fig16 from '.././Image/Project1_Fig16.png';
 import Fig17 from '.././Image/Project1_Fig17.png';
 import Fig18 from '.././Image/Project1_Fig18.png';
+import Fig19 from '.././Image/Project1_Fig19.png';
+import Demo1 from '.././Image/Project1_Demo1.png';
 
 
 const Project1Protected = () => {
   return (
+    <div>
     <ContentContainer>
       <Fullwidth>
         <Image src={Cover1} alt="cover"/>
@@ -190,7 +193,7 @@ const Project1Protected = () => {
 
       <Block>
         <Header center>Interaction Design</Header>
-        <P center>Appneta is a powerful tool. Throughout its age, the product had also developed its complexity. At the time I joined, several forces were pointing us towards fixing the underutilized, unintuitive and unintelligent search as the first step to remove the scalability bottlenecks.</P>
+        <P center>I like to develop concepts quite early in the project even without enough information. I treat them as hypothesis. As we gain more visibility into the problem, opportunity and solution, I also morph my concepts to mirror this growth. This helps me rid of early biases, inclinations and obvious ideas to leave room for creativity bandwidth.</P>
       </Block>
 
       <Block>
@@ -239,12 +242,36 @@ const Project1Protected = () => {
         <h5>Iterations on Visual Identity of 3 Filters</h5>
       </Block>
 
+      <Block>
+        <SubHeader>Iterating on Components & Flows</SubHeader>
+        <P>I prototyped quick iterations of components and flows to gain early buy-ins with product managers and get feedback from from internal resources - customer support and our IT team.</P>  
+      </Block> 
+
+      <Block>
+        <Image src={Fig19} /> 
+        <h5>Subset of Iterations</h5>     
+      </Block>
+
+      <Block>
+        <Header center>final design</Header>
+      </Block>
+
+
+    
+      <DemoBlock>
+     <DemoImage src={Demo1}/>
+    </DemoBlock>
+
     </ContentContainer> 
+
+   
+  </div>
   );
 }
 
 const ContentContainer = styled.div`
   margin: 6em auto;
+  width: 800px;
 `; 
 
 const Image = styled.img`
@@ -299,4 +326,14 @@ const Li = styled.li`
   font-size: 1.4em;
 `;
 
+const DemoBlock = styled.div`
+  background-color: #FBFBFB;
+  // width: 1000px;
+`;
+
+const DemoImage = styled.img`
+  max-width: 100%;
+  margin: auto;
+  display: block;
+`;
 export default Project1Protected;

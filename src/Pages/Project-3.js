@@ -7,17 +7,12 @@ const Project3 = () => {
       <h1>Project 3</h1>
     </Content>
   );
-}
-
+};
 
 const Content = styled.div`
   width: 60%;
   background: pink;
   height: 40em;
-`; 
-
-
-
-
+`;
 
 export default Project3;

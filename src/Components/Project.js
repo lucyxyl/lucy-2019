@@ -1,15 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import Appneta1 from '.././Image/Project1_DarkCover.png';
-import {Link} from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 const Project = props => (
-
   <ProjectSection>
     <ProjectImg>
-      <Link to = {props.link}>
-       <ProjectImg1 src={Appneta1} alt="Project Image" />
+      <Link to={props.link}>
+        <ProjectImg1 src={Appneta1} alt="Project Image" />
       </Link>
       <Title>{props.title}</Title>
     </ProjectImg>
@@ -20,17 +18,16 @@ const Project = props => (
       </ProjectDetailsLeft>
       <ProjectDetailsRight>
         <EnterButton>
-          <Link to = {props.link}>
+          <Link to={props.link}>
             <WhiteLink>
-              <ion-icon size="large" name="md-eye"/>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              <ion-icon size="large" name="ios-arrow-round-forward"/>
+              <ion-icon size="large" name="md-eye" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              <ion-icon size="large" name="ios-arrow-round-forward" />
             </WhiteLink>
           </Link>
         </EnterButton>
       </ProjectDetailsRight>
     </ProjectDetails>
-  </ProjectSection> 
-
+  </ProjectSection>
 );
 
 const ProjectSection = styled.div`
@@ -56,24 +53,22 @@ const Title = styled.h3`
   position: absolute;
   bottom: 0em;
   left: 0em;
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 0 0.6em 0 0.2em;
-`; 
-
-const Subtitle = styled.h6`
 `;
 
-const FeatureText = styled.p`
-  color: #48474C;
-  font-size: 1.4em;
+const Subtitle = styled.h6``;
 
+const FeatureText = styled.p`
+  color: #48474c;
+  font-size: 1.4em;
 `;
 const EnterButton = styled.button`
   background-color: #222226;
   border-radius: 8em;
   padding: 2em 2.6em;
-  color: 
-`; 
+  color: ;
+`;
 
 const ProjectDetailsLeft = styled.div`
   width: 60%;
