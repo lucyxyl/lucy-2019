@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import SidebySide from './SidebySide';
 
-import IntroImg1 from '.././Image/Project1_IntroImg1.svg';
-import IntroImg2 from '.././Image/Project1_IntroImg2.svg';
-import IntroImg3 from '.././Image/Project1_IntroImg3.svg';
-import IntroImg4 from '.././Image/Project1_IntroImg4.svg';
+import IntroImg1 from '../Image/Project1_IntroImg1.svg';
+import IntroImg2 from '../Image/Project1_IntroImg2.svg';
+import IntroImg3 from '../Image/Project1_IntroImg3.svg';
+import IntroImg4 from '../Image/Project1_IntroImg4.svg';
 
 const sidecontent1 = [
   {
@@ -35,17 +35,13 @@ const sidecontent1 = [
   },
 ];
 
-class SidebySideContent extends Component {
-  render() {
-    return (
-      <Container>
-        {sidecontent1.map(s => (
-          <SidebySide image={s.image} title={s.title} details={s.details} />
-        ))}
-      </Container>
-    );
-  }
-}
+const SidebySideContent = () => (
+  <Container>
+    {sidecontent1.map(s => (
+      <SidebySide image={s.image} title={s.title} details={s.details} />
+    ))}
+  </Container>
+);
 
 const Container = styled.div``;
 

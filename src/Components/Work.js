@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Project from './Project';
 
@@ -40,17 +40,13 @@ const projects = [
   },
 ];
 
-class Work extends Component {
-  render() {
-    return (
-      <ProjectContainer>
-        {projects.map(p => (
-          <Project title={p.title} subtitle={p.subtitle} details={p.details} link={p.link} />
-        ))}
-      </ProjectContainer>
-    );
-  }
-}
+const Work = () => (
+  <ProjectContainer>
+    {projects.map(p => (
+      <Project title={p.title} subtitle={p.subtitle} details={p.details} link={p.link} />
+    ))}
+  </ProjectContainer>
+);
 
 const ProjectContainer = styled.div`
   margin: 2em 0;

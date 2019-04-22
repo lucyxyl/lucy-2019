@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const SidebySide = props => (
   <SidebySideContainer>
@@ -12,6 +13,12 @@ const SidebySide = props => (
     </RightSide>
   </SidebySideContainer>
 );
+
+SidebySide.propTypes = {
+  image: PropTypes.object.isRequired,
+  title: PropTypes.string.isRequired,
+  details: PropTypes.string.isRequired,
+};
 
 const SidebySideContainer = styled.div`
   position: relative;

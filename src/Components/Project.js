@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Appneta1 from '.././Image/Project1_DarkCover.png';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import Appneta1 from '../Image/Project1_DarkCover.png';
 
 const Project = props => (
   <ProjectSection>
@@ -29,6 +30,13 @@ const Project = props => (
     </ProjectDetails>
   </ProjectSection>
 );
+
+Project.propTypes = {
+  link: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  details: PropTypes.string.isRequired,
+};
 
 const ProjectSection = styled.div`
   display: flex;

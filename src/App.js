@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import styled from 'styled-components';
-
+import ScrollToTop from './Components/ScrollToTop';
 import logo from './Image/logo.svg';
 import logow from './Image/logo-w.svg';
 import inlogo from './Image/in-logo.svg';
-
 import Nibbles from './Pages/Nibbles';
 import About from './Pages/About';
 import Index from './Pages/Index';
@@ -16,52 +15,59 @@ import Project3 from './Pages/Project-3';
 
 import './App.css';
 
+const ScrollToTopConnected = withRouter(ScrollToTop);
 
 const App = () => (
   <Router>
-    <div>
+    <ScrollToTopConnected>
+      <div>
+        <Nav>
+          <Menu>
+            <Logo>
+              <Link to="/">
+                <img src={logo} alt="logo" />
+              </Link>
+            </Logo>
+            <Page>
+              <Link to="/">work</Link>
+            </Page>
+            <Page>
+              <Link to="/nibbles/">nibbles</Link>
+            </Page>
+            <Page last>
+              <Link to="/about/">about</Link>
+            </Page>
+          </Menu>
+        </Nav>
 
-      <Nav>
-        <Menu>
-          <Logo>
-            <Link to="/">
-              <img src={logo} alt="logo"/>
-            </Link>
-          </Logo>
-          <Page><Link to="/">work</Link></Page>
-          <Page><Link to="/nibbles/">nibbles</Link></Page>
-          <Page last><Link to="/about/">about</Link></Page>
-        </Menu>
-      </Nav>
-
-      <Route path="/" exact component={Index} />
-      <Route path="/nibbles/" component={Nibbles} />
-      <Route path="/about/" component={About} />
-      <Route path="/appneta-search/" component={Project1} />
-      <Route path="/appneta-visualization/" component={Project2} />
-      <Route path="/intuitive-ecosystem/" component={Project3} />
+        <Route path="/" exact component={Index} />
+        <Route path="/nibbles/" component={Nibbles} />
+        <Route path="/about/" component={About} />
+        <Route path="/appneta-search/" component={Project1} />
+        <Route path="/appneta-visualization/" component={Project2} />
+        <Route path="/intuitive-ecosystem/" component={Project3} />
         {/* <Route path="/intuitive-sales-content/" component={Project4} />
       <Route path="/scad-accessibility/" component={Project5} /> */}
 
-
-      <Footer>
-        <FooterBar>
-          <FooterElement>
-            <img src={logow} alt="light logo" />
-          </FooterElement>
-          <FooterElement>
-            {/* <a href="https://github.com/lucyxyl/lucy-2019" target="_blank"> */}
-            <FeatureText primary>Design & Code by Lucy.</FeatureText>
-            {/* </a> */}
-          </FooterElement>
-          <FooterElement>
-            <a href="https://www.linkedin.com/in/lucyxylin/" target="_blank">
-              <img src={inlogo} alt="linkedin logo"/>
-            </a>
-          </FooterElement>
-        </FooterBar>
-      </Footer>
-    </div>
+        <Footer>
+          <FooterBar>
+            <FooterElement>
+              <img src={logow} alt="light logo" />
+            </FooterElement>
+            <FooterElement>
+              {/* <a href="https://github.com/lucyxyl/lucy-2019" target="_blank"> */}
+              <FeatureText primary>Design & Code by Lucy.</FeatureText>
+              {/* </a> */}
+            </FooterElement>
+            <FooterElement>
+              <a href="https://www.linkedin.com/in/lucyxylin/" target="_blank">
+                <img src={inlogo} alt="linkedin logo" />
+              </a>
+            </FooterElement>
+          </FooterBar>
+        </Footer>
+      </div>
+    </ScrollToTopConnected>
   </Router>
 );
 
@@ -81,7 +87,7 @@ const Logo = styled.li`
 `;
 
 const Page = styled.li`
-  padding: ${props => props.last ? "0.24em 0 0.24em 1em" : "0.24em 1em"};
+  padding: ${props => (props.last ? '0.24em 0 0.24em 1em' : '0.24em 1em')};
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.2em;

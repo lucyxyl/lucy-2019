@@ -1,20 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-import Project1Intro from '../Components/Project-1-Intro';
-import Password from '../Components/Password';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { withRouter } from 'react-router';
 
-const Project1 = () => {
-  return (
+import Project1Protected from './Project1Protected';
+import Project1Public from './Project1Public';
+import ScrollToTop from '../Components/ScrollToTop';
+
+const ScrollToTopConnected = withRouter(ScrollToTop);
+
+const Project1 = () => (
+  <Router>
     <Content>
-      <Project1Intro />
-      <Password />
+      <Route path="/appneta-search/" exact component={Project1Public} />
+      <Route path="/appneta-search/protected/" component={Project1Protected} />
     </Content>
-  );
-};
+  </Router>
+);
 
-const Content = styled.div`
-  width: 800px;
-  margin: 4em auto;
-`;
+const Content = styled.div``;
 
 export default Project1;

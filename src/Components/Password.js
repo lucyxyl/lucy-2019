@@ -1,36 +1,66 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Project1Protected from '../Pages/Project1Protected';
+import axios from 'axios';
+import { withRouter } from 'react-router';
 
-const Password = () => (
-  <Router>
-    <Block>
-      <SectionDivider>
-        <SectionDividerBg> The story </SectionDividerBg>
-      </SectionDivider>
-    </Block>
+class Password extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      userSecret: '',
+    };
+  }
 
-    <InnerBlock>
-      <h4> Enter password to read the rest, or reach out to xinyu.lin.lucy @gmail.com </h4> <Margin />
-      <ion-icon size="large" name="md-key" />
-      <Margin />
-      <PasswordForm>
-        <PasswordField placeholder="Password" type="password" />
-        <EnterPassword>
-          <Link to="/appneta-search/protected">
-            <ProtectedLink>
+  handleClick = () => {
+    axios
+      .get(`/authenticate.php?secret=${this.state.userSecret}`)
+      .then(response => {
+        if (response.data === true) {
+          this.props.history.push('/appneta-search/protected/');
+        }
+      })
+      .catch(error => console.log(error));
+  };
+
+  handleInput = event => {
+    this.setState({
+      userSecret: event.target.value,
+    });
+  };
+
+  onFormSubmit = event => {
+    event.preventDefault();
+  };
+
+  render() {
+    return (
+      <div>
+        <Block>
+          <SectionDivider>
+            <SectionDividerBg> The story </SectionDividerBg>
+          </SectionDivider>
+        </Block>
+        <InnerBlock>
+          <h4> Enter password to read the rest, or reach out to xinyu.lin.lucy @gmail.com </h4> <Margin />
+          <ion-icon size="large" name="md-key" />
+          <Margin />
+          <PasswordForm onSubmit={this.onFormSubmit}>
+            <PasswordField
+              placeholder="Password"
+              type="password"
+              value={this.state.userSecret}
+              onChange={this.handleInput}
+            />
+            <EnterPassword onClick={this.handleClick}>
               <ion-icon size="large" name="ios-arrow-round-forward" />
-            </ProtectedLink>
-          </Link>
-        </EnterPassword>
-      </PasswordForm>
-      <Margin />
-    </InnerBlock>
-
-    <Route path="/appneta-search/protected" exact component={Project1Protected} />
-  </Router>
-);
+            </EnterPassword>
+          </PasswordForm>
+          <Margin />
+        </InnerBlock>
+      </div>
+    );
+  }
+}
 
 const SectionDivider = styled.h6`
   width: 100%;
@@ -76,6 +106,4 @@ const EnterPassword = styled.button`
   padding: 1em 1em;
 `;
 
-const ProtectedLink = styled.a``;
-
-export default Password;
+export default withRouter(Password);
