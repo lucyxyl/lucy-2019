@@ -2,16 +2,16 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import styled from 'styled-components';
-import ScrollToTop from './Components/ScrollToTop';
+import ScrollToTop from './Shared/ScrollToTop';
 import logo from './Image/logo.svg';
 import logow from './Image/logo-w.svg';
 import inlogo from './Image/in-logo.svg';
-import Nibbles from './Pages/Nibbles';
-import About from './Pages/About';
-import Index from './Pages/Index';
-import Project1 from './Pages/Project-1';
-import Project2 from './Pages/Project-2';
-import Project3 from './Pages/Project-3';
+import Nibbles from './Nibbles/Nibbles';
+import About from './About/About';
+import Index from './Home/Index';
+import Project1 from './Project1/Project-1';
+import Project2 from './Project2/Project-2';
+import Project3 from './Project3/Project-3';
 
 import './App.css';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Project1Intro from '../Components/Project-1-Intro';
-import Password from '../Components/Password';
+import Project1Intro from './Project-1-Intro';
+import Password from '../Shared/Password';
 
 const Project1Public = () => (
   <Content>

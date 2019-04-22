@@ -1,14 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
-
-import SidebySide from './SidebySide';
+import SidebySideLayout from './SidebySideLayout';
 
 import IntroImg1 from '../Image/Project1_IntroImg1.svg';
 import IntroImg2 from '../Image/Project1_IntroImg2.svg';
 import IntroImg3 from '../Image/Project1_IntroImg3.svg';
 import IntroImg4 from '../Image/Project1_IntroImg4.svg';
 
-const sidecontent1 = [
+const sidedata1 = [
   {
     image: IntroImg1,
     title: 'Rising Deployment',
@@ -35,14 +33,14 @@ const sidecontent1 = [
   },
 ];
 
-const SidebySideContent = () => (
-  <Container>
-    {sidecontent1.map(s => (
-      <SidebySide image={s.image} title={s.title} details={s.details} />
-    ))}
-  </Container>
-);
+const SidebySide1 = () => {
+  return (
+    <>
+      {sidedata1.map(s => (
+        <SidebySideLayout image1={s.image} title1={s.title} details1={s.details} />
+      ))}
+    </>
+  );
+};
 
-const Container = styled.div``;
-
-export default SidebySideContent;
+export default SidebySide1;

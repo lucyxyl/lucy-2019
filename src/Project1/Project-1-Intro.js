@@ -36,7 +36,7 @@ const Project1 = () => {
           </Row>
           <Row>
             <h1>3.</h1>
-            <Listln>Design the MVP version and concepts of the "blue-sky" version of the query experience.</Listln>
+            <Listln>Design the MVP version and concepts of the blue-sky version of the query experience.</Listln>
           </Row>
           <Row>
             <h1>4.</h1>

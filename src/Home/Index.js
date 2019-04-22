@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Work from '../Components/Work';
-import Intro from '../Components/Intro';
-import Divider from '../Components/Divider';
-import FooterText from '../Components/FooterText';
+import Work from './Work';
+import Intro from './Intro';
+import Divider from '../Shared/Divider';
+import FooterText from './FooterText';
 
 const Index = () => {
   return (

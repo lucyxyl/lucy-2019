@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import SidebySideContent from '../Components/SidebySideContent';
+import SidebySide1 from './SidebySide';
+import SidebySide2 from './SidebySide2';
 
 import Cover1 from '../Image/Project1_HeaderImg.svg';
 import Fig1 from '../Image/Project1_Fig1.png';
@@ -50,7 +51,7 @@ const Project1Protected = () => {
           </P>
         </Block>
 
-        <SidebySideContent />
+        <SidebySide1 />
 
         <Block big>
           <Image src={Fig1} />
@@ -100,7 +101,7 @@ const Project1Protected = () => {
             </Li>
             <br />
             <Li>
-              Set a vision for scaling search, move forward with a "good-enough" version in 2 sprints, and
+              Set a vision for scaling search, move forward with a good-enough version in 2 sprints, and
               sell/reserve this mandate in the next quarters to inch towards the vision.
             </Li>
           </ul>
@@ -126,7 +127,7 @@ const Project1Protected = () => {
           </P>
           <Block>
             <Quote>
-              I was risking designing too much or too little and needed to hear a direct "go" from everyone.
+              I was risking designing too much or too little and needed to hear a direct go from everyone.
             </Quote>
           </Block>
         </Block>
@@ -163,11 +164,11 @@ const Project1Protected = () => {
           <P>
             The search of concern sits on top of the Network Paths page. Before the redesign, users can employ a
             combination of search/filter, customize columns, and view by/sort by tools to find and custom the view
-            that's most productive to them.
+            that is most productive to them.
           </P>
           <P>
             Using FullStory, a session replay tool for us to gather qualitative and quantitative data of our
-            customers interacting with our product, we learned that:{' '}
+            customers interacting with our product, we learned that:
           </P>
           <ul>
             <Li>Keyword search & filter are both underutilized</Li>
@@ -243,9 +244,9 @@ const Project1Protected = () => {
           </P>
           <P>I designed the workshops with 2 lenses</P>
           <ul>
-            <Li>What's today (zoom-in)</Li>
+            <Li>What is today (zoom-in)</Li>
             <br />
-            <Li>What's blue sky (zoom-out) </Li>
+            <Li>What is blue sky (zoom-out) </Li>
           </ul>
         </Block>
 
@@ -258,7 +259,7 @@ const Project1Protected = () => {
           <P>Through our workshop, we defined 3 primary customer archetypes</P>
         </Block>
 
-        <SidebySideContent />
+        <SidebySide2 />
 
         <Block>
           <P>

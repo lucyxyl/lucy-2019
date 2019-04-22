@@ -2,22 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const SidebySide = props => (
+const SidebySideLayout = props => (
   <SidebySideContainer>
     <LeftSide>
-      <Image src={props.image} alt="Intro demo" />
+      <Image src={props.image1} alt="Intro demo" />
     </LeftSide>
     <RightSide>
-      <h3>{props.title}</h3>
-      <SideP>{props.details}</SideP>
+      <h3>{props.title1}</h3>
+      <SideP>{props.details1}</SideP>
     </RightSide>
   </SidebySideContainer>
 );
 
-SidebySide.propTypes = {
-  image: PropTypes.object.isRequired,
-  title: PropTypes.string.isRequired,
-  details: PropTypes.string.isRequired,
+SidebySideLayout.propTypes = {
+  image1: PropTypes.object.isRequired,
+  title1: PropTypes.string.isRequired,
+  details1: PropTypes.string.isRequired,
 };
 
 const SidebySideContainer = styled.div`
@@ -42,4 +42,4 @@ const SideP = styled.p`
   font-size: 1.3em;
 `;
 
-export default SidebySide;
+export default SidebySideLayout;
