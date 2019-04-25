@@ -2,31 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import Appneta1 from '../Image/Project1_DarkCover.png';
 
 const Project = props => (
   <ProjectSection>
-    <ProjectImg>
-      <Link to={props.link}>
-        <ProjectImg1 src={Appneta1} alt="Project Image" />
-      </Link>
-      <Title>{props.title}</Title>
-    </ProjectImg>
+    <Link to={props.link}>
+      <ProjectImg>
+        <ProjectImg1 src={props.image} alt="Project Image" />
+        <Title>{props.title}</Title>
+      </ProjectImg>
+    </Link>
     <ProjectDetails>
       <ProjectDetailsLeft>
-        <Subtitle>{props.subtitle}</Subtitle>
+        <Subtitle>
+          {props.subtitle} <ion-icon size="small" name="md-lock" />
+        </Subtitle>
         <FeatureText>{props.details}</FeatureText>
       </ProjectDetailsLeft>
-      <ProjectDetailsRight>
-        <EnterButton>
-          <Link to={props.link}>
-            <WhiteLink>
-              <ion-icon size="large" name="md-eye" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              <ion-icon size="large" name="ios-arrow-round-forward" />
-            </WhiteLink>
-          </Link>
-        </EnterButton>
-      </ProjectDetailsRight>
     </ProjectDetails>
   </ProjectSection>
 );
@@ -71,24 +62,8 @@ const FeatureText = styled.p`
   color: #48474c;
   font-size: 1.4em;
 `;
-const EnterButton = styled.button`
-  background-color: #222226;
-  border-radius: 8em;
-  padding: 2em 2.6em;
-  color: ;
-`;
-
 const ProjectDetailsLeft = styled.div`
-  width: 60%;
-`;
-
-const ProjectDetailsRight = styled.div`
-  margin-left: auto;
-  padding: 2em 0;
-`;
-
-const WhiteLink = styled.a`
-  color: white;
+  width: 75%;
 `;
 
 export default Project;

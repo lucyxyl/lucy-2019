@@ -2,48 +2,41 @@ import React from 'react';
 import styled from 'styled-components';
 import Project from './Project';
 
+import Project1Cover from '../Image/Project1_Cover.png';
+import Project3Cover from '../Image/Project2_Cover.png';
+import Project2Cover from '../Image/Project3_Cover.png';
+
 const projects = [
   {
     title: 'Scaling The Search Experience',
+    image: Project1Cover,
     subtitle: 'Appneta',
     details:
       'A story of how a collaborative effort from product & design looked beyond the search to fix, simplify the query experience as a starting point to improve way-finding in a growing SaaS application.',
     link: '/appneta-search/',
   },
   {
-    title: 'Visualizing Violation Events',
-    subtitle: 'Appneta',
+    title: 'Recontextualizing Sales Content',
+    image: Project2Cover,
+    subtitle: 'Intuitive Surgical',
     details:
-      'A story of how a collaborative effort from product & design looked beyond the search to fix, simplify the query experience as a starting point to improve way-finding in a growing SaaS application.',
-    link: '/appneta-visualization/',
+      'That time when we dived into the world of sales to re-design a content management tool to accommodate the evolving challenges of sales representatives.',
+    link: '/isi-salescontent/',
   },
   {
     title: 'Shaping a Surgical Ecosystem',
+    image: Project3Cover,
     subtitle: 'Intuitive Surgical',
     details:
-      'A story of how a collaborative effort from product & design looked beyond the search to fix, simplify the query experience as a starting point to improve way-finding in a growing SaaS application.',
-    link: '/intuitive-ecosystem/',
-  },
-  {
-    title: 'Recontextualizing Sales Content',
-    subtitle: 'Intuitive Surgical',
-    details:
-      'A story of how a collaborative effort from product & design looked beyond the search to fix, simplify the query experience as a starting point to improve way-finding in a growing SaaS application.',
-    link: '/intuitive-sales-content/',
-  },
-  {
-    title: 'Raising Access to Healthcare',
-    subtitle: 'SCAD',
-    details:
-      'A story of how a collaborative effort from product & design looked beyond the search to fix, simplify the query experience as a starting point to improve way-finding in a growing SaaS application.',
-    link: '/scad-accessibility/',
+      'When limitations breed creativity, a tale of 6 multidisciplinary thinkers + 5 sprints to prove an ambitious vision with the help of storytelling and rapid prototyping.',
+    link: '/isi-ecosystem/',
   },
 ];
 
 const Work = () => (
   <ProjectContainer>
     {projects.map(p => (
-      <Project title={p.title} subtitle={p.subtitle} details={p.details} link={p.link} />
+      <Project title={p.title} image={p.image} subtitle={p.subtitle} details={p.details} link={p.link} />
     ))}
   </ProjectContainer>
 );

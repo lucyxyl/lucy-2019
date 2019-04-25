@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Project1 = () => {
+const Project1Intro = () => {
   return (
     <div>
       <Content>
@@ -79,4 +79,4 @@ const Listln = styled.h4`
   padding: 0 0 0 1em;
 `;
 
-export default Project1;
+export default Project1Intro;

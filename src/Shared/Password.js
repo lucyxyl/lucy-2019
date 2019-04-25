@@ -41,7 +41,12 @@ class Password extends React.Component {
           </SectionDivider>
         </Block>
         <InnerBlock>
-          <h4> Enter password to read the rest, or reach out to xinyu.lin.lucy @gmail.com </h4> <Margin />
+          <h4>
+            {' '}
+            Enter password to read the rest, or reach out to
+            <br /> xinyu.lin.lucy @gmail.com{' '}
+          </h4>{' '}
+          <Margin />
           <ion-icon size="large" name="md-key" />
           <Margin />
           <PasswordForm onSubmit={this.onFormSubmit}>

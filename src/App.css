@@ -2,9 +2,11 @@ h1 {
   font-family: minionBold;
   color: #222226;
 }
-p, .pfeature, .pregular {
+p,
+.pfeature,
+.pregular {
   font-family: minionRegular;
-  color: #48474C;
+  color: #48474c;
   line-height: 1.6em;
 }
 button {
@@ -13,21 +15,28 @@ button {
   color: #222226;
   border: none;
 }
-input:focus, button:focus {
+input:focus,
+button:focus {
   outline: 0;
 }
-a:hover, button:hover {
+a:hover,
+button:hover {
   opacity: 0.6;
   transition: 0.5s;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Hind', sans-serif;
 }
 h1 {
   font-size: 4em;
 }
-h2, h3 {
+h2,
+h3 {
   font-size: 1.6em;
   line-height: 2.2em;
   font-weight: 600;
@@ -36,13 +45,20 @@ h2, h3 {
 h2 {
   text-transform: uppercase;
 }
-h4, h5, h6 {
-  color: #716F7D;
+h4,
+h5,
+h6 {
+  color: #716f7d;
   font-weight: 400;
 }
 
-h4, h6 {
+h4 {
   font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.2em;
+  line-height: 3em;
 }
 
 h5 {
@@ -63,7 +79,6 @@ h6 {
   font-size: 1.4em;
 }
 
-
 img {
   vertical-align: bottom;
 }
@@ -73,12 +88,12 @@ a {
   color: #222226;
 }
 ::selection {
-  background: #FEFBD8; /* WebKit/Blink Browsers */
+  background: #fefbd8; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #FEFBD8; /* Gecko Browsers */
+  background: #fefbd8; /* Gecko Browsers */
 }
 * {
   margin: 0;
   padding: 0;
-  }
+}

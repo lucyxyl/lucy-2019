@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import SidebySide1 from './SidebySide';
 import SidebySide2 from './SidebySide2';
 
-import Cover1 from '../Image/Project1_HeaderImg.svg';
+import Cover1 from '../Image/Project1_HeaderImg.png';
 import Fig1 from '../Image/Project1_Fig1.png';
 import Fig2 from '../Image/Project1_Fig2.png';
 import Fig3 from '../Image/Project1_Fig3.svg';
@@ -94,7 +94,7 @@ const Project1Protected = () => {
             To resolve the scalability bottleneck, we knew that it couldn’t be done overnight. So the question came
             down to: “How can we patch it up with the least cost upfront?” We were faced with 2 options:
           </P>
-          <ul>
+          <Ul>
             <Li>
               Delay this costly effort, improve find-ability by cheaply migrating a legacy feature “saved list”
               without improving ux, and rely on customer support to fight the fire for top tier customers
@@ -104,7 +104,7 @@ const Project1Protected = () => {
               Set a vision for scaling search, move forward with a good-enough version in 2 sprints, and
               sell/reserve this mandate in the next quarters to inch towards the vision.
             </Li>
-          </ul>
+          </Ul>
           <Block>
             <Quote>
               Historically, our product has leaned more towards building new capabilities than patching up for
@@ -170,11 +170,11 @@ const Project1Protected = () => {
             Using FullStory, a session replay tool for us to gather qualitative and quantitative data of our
             customers interacting with our product, we learned that:
           </P>
-          <ul>
+          <Ul>
             <Li>Keyword search & filter are both underutilized</Li>
             <br />
             <Li>Group By views became the workaround</Li>
-          </ul>
+          </Ul>
         </Block>
 
         <Block>
@@ -243,11 +243,11 @@ const Project1Protected = () => {
             scalability bottlenecks.
           </P>
           <P>I designed the workshops with 2 lenses</P>
-          <ul>
+          <Ul>
             <Li>What is today (zoom-in)</Li>
             <br />
             <Li>What is blue sky (zoom-out) </Li>
-          </ul>
+          </Ul>
         </Block>
 
         <Block>
@@ -404,7 +404,7 @@ const Image = styled.img`
   max-width: 100%;
   padding-bottom: 1em;
   margin: 0 auto;
-  display: flex;qqq
+  display: flex;
 `;
 
 const Fullwidth = styled.div`
@@ -442,6 +442,10 @@ const P = styled.p`
 
 const Quote = styled.h4`
   text-align: center;
+`;
+
+const Ul = styled.ul`
+  padding-inline-start: 40px;
 `;
 
 const Li = styled.li`

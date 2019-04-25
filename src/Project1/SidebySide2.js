@@ -23,13 +23,13 @@ const sidedata2 = [
   },
   {
     image: Archetype2,
-    title: 'Emerging Variability',
+    title: 'The Director/Architect',
     details:
       'The designer/overseer of network infrastructure. Overall health of their org network is their primary concern.',
   },
   {
     image: Archetype3,
-    title: 'API Winning UI',
+    title: 'The Network Engineers',
     details:
       'the frontline warriors discovering and resolving IT tickets. Health of their network segment is their primary concern.',
   },

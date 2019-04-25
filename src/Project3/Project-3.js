@@ -1,18 +1,22 @@
 import React from 'react';
-import styled from 'styled-components';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { withRouter } from 'react-router';
 
-const Project3 = () => {
-  return (
-    <Content>
-      <h1>Project 3</h1>
-    </Content>
-  );
-};
+import Project3Protected from './Project3Protected';
+import Project3Public from './Project3Public';
+import ScrollToTop from '../Shared/ScrollToTop';
 
-const Content = styled.div`
-  width: 60%;
-  background: pink;
-  height: 40em;
-`;
+const ScrollToTopConnected = withRouter(ScrollToTop);
+
+const Project3 = () => (
+  <Router>
+    <ScrollToTopConnected>
+      <>
+        <Route path="/isi-ecosystem/" exact component={Project3Public} />
+        <Route path="/isi-ecosystem/protected/" component={Project3Protected} />
+      </>
+    </ScrollToTopConnected>
+  </Router>
+);
 
 export default Project3;

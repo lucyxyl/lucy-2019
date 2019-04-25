@@ -44,10 +44,8 @@ const App = () => (
         <Route path="/nibbles/" component={Nibbles} />
         <Route path="/about/" component={About} />
         <Route path="/appneta-search/" component={Project1} />
-        <Route path="/appneta-visualization/" component={Project2} />
-        <Route path="/intuitive-ecosystem/" component={Project3} />
-        {/* <Route path="/intuitive-sales-content/" component={Project4} />
-      <Route path="/scad-accessibility/" component={Project5} /> */}
+        <Route path="/isi-salescontent/" component={Project2} />
+        <Route path="/isi-ecosystem/" component={Project3} />
 
         <Footer>
           <FooterBar>
