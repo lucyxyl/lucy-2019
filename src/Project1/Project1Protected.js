@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import styled from 'styled-components';
 import SidebySide1 from './SidebySide';
 import SidebySide2 from './SidebySide2';
 
+import PFig2 from '../Image/ProjectData_2.png';
 import Cover1 from '../Image/Project1_HeaderImg.png';
 import Fig1 from '../Image/Project1_Fig1.png';
 import Fig2 from '../Image/Project1_Fig2.png';
@@ -21,7 +24,6 @@ import Fig14 from '../Image/Project1_Fig14.png';
 import Fig15 from '../Image/Project1_Fig15.png';
 import Fig16 from '../Image/Project1_Fig16.png';
 import Fig17 from '../Image/Project1_Fig17.png';
-import Fig18 from '../Image/Project1_Fig18.png';
 import Fig19 from '../Image/Project1_Fig19.png';
 import Demo1 from '../Image/Project1_Demo1.png';
 import Demo2 from '../Image/Project1_Demo2.png';
@@ -356,7 +358,6 @@ const Project1Protected = () => {
         <Block>
           <Image src={Fig16} />
           <Image src={Fig17} />
-          <Image src={Fig18} />
           <h5>Iterations on Visual Identity of 3 Filters</h5>
         </Block>
 
@@ -391,9 +392,61 @@ const Project1Protected = () => {
         <DemoImage src={Demo10} />
         <DemoImage src={Demo11} />
       </Fullwidth>
+      <Content>
+        <Block>
+          <SectionDivider>
+            <SectionDividerBg>other story</SectionDividerBg>
+          </SectionDivider>
+          <Link to="/">
+            <ButtonContainer>
+              <ButtonChild left>
+                <Title>Recontextualizing Sales Content</Title>
+                <Subtitle>Intuitive Surgical</Subtitle>
+              </ButtonChild>
+              <ButtonChild>
+                <Image nextBtnImg src={PFig2} />
+              </ButtonChild>
+            </ButtonContainer>
+          </Link>
+        </Block>
+      </Content>
     </div>
   );
 };
+
+const ButtonChild = styled.div`
+  flex: ${props => (props.left ? '2' : '1')};
+  padding: ${props => (props.left ? '2em 0 2em 2em' : '0')};
+  align-self: flex-end;
+`;
+
+const ButtonContainer = styled.div`
+  background-color: #222226;
+  margin: 4em auto;
+  text-align: left;
+  display: flex;
+  max-width: 100%;
+`;
+
+const SectionDivider = styled.h6`
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #d0d0d0;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+`;
+
+const SectionDividerBg = styled.span`
+  background: #ffffff;
+  padding: 0 1em;
+`;
+
+const Title = styled.h3`
+  color: #fff;
+`;
+const Subtitle = styled.h6`
+  color: #fff;
+`;
 
 const Content = styled.div`
   margin: 0 auto;
@@ -402,7 +455,7 @@ const Content = styled.div`
 
 const Image = styled.img`
   max-width: 100%;
-  padding-bottom: 1em;
+  padding-bottom: ${props => (props.nextBtnImg ? '0' : '1em')};
   margin: 0 auto;
   display: flex;
 `;

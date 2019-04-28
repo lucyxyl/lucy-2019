@@ -1,4 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import PFig3 from '../Image/ProjectData_3.png';
+
 import styled from 'styled-components';
 
 import Cover2 from '../Image/Project2_HeaderImg.png';
@@ -497,10 +501,60 @@ const Project2Protected = () => {
           </SideContainer>
         </Block>
       </Fullwidth>
+      <Content>
+        <Block>
+          <SectionDivider>
+            <SectionDividerBg>other story</SectionDividerBg>
+          </SectionDivider>
+          <Link to="/">
+            <ButtonContainer>
+              <ButtonChild left>
+                <Title>Shaping a Surgical Ecosystem</Title>
+                <Subtitle>Intuitive Surgical</Subtitle>
+              </ButtonChild>
+              <ButtonChild>
+                <Image nextBtnImg src={PFig3} />
+              </ButtonChild>
+            </ButtonContainer>
+          </Link>
+        </Block>
+      </Content>
     </>
   );
 };
+const ButtonChild = styled.div`
+  flex: ${props => (props.left ? '2' : '1')};
+  padding: ${props => (props.left ? '2em 0 2em 2em' : '0')};
+  align-self: flex-end;
+`;
 
+const ButtonContainer = styled.div`
+  background-color: #222226;
+  margin: 4em auto;
+  text-align: left;
+  display: flex;
+  max-width: 100%;
+`;
+
+const SectionDivider = styled.h6`
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #d0d0d0;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+`;
+
+const SectionDividerBg = styled.span`
+  background: #ffffff;
+  padding: 0 1em;
+`;
+
+const Title = styled.h3`
+  color: #fff;
+`;
+const Subtitle = styled.h6`
+  color: #fff;
+`;
 const H4 = styled.h4`
   text-align: center;
 `;
@@ -527,7 +581,7 @@ const SideRight = styled.div`
 `;
 const Image = styled.img`
   max-width: ${props => (props.small ? '68%' : '100%')};
-  padding-bottom: 1em;
+  padding-bottom: ${props => (props.nextBtnImg ? '0' : '1em')};
   margin: 0 auto;
   display: flex;
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styled from 'styled-components';
-import Project2 from '../Project2/Project-2';
+import AboutData from '../Image/AboutData.png';
 
 import Cover3 from '../Image/Project3_HeaderImg.png';
 import Fig1 from '../Image/Project3_Fig1.png';
@@ -191,11 +191,6 @@ const Project2Protected = () => {
             ins and outs of an operation room.
           </P>
 
-          <P>
-            At the first stage, we wanted the participants to walk us through their sales journey without filters.
-            This open ended approach sets them at ease as it’s something they are familiar with and allows us to
-            pinpoint highlights in their journey that they prioritize or is motivated by.
-          </P>
           <Image src={Fig6} />
           <h5>
             Working with our researcher, we uncovered numerous early insights by revisiting the typical workflow
@@ -496,7 +491,7 @@ const Project2Protected = () => {
           <SideRight>
             <h6>Navigation 3.0: Flexibility</h6>
             <SideP>
-              In the end, we gravitated towards simplicity: A side nav that duals as a draggable component to
+              In the end, we gravitated towards flexibility: A side nav that duals as a draggable component to
               customize the dashboard. An important part of storytelling the personalization power of this
               ecosystem.
             </SideP>
@@ -531,40 +526,55 @@ const Project2Protected = () => {
         <Block>
           <Header center>Outcome & impact</Header>
           <P center>
-            My colleague worked on the visualizing the story from the perspective of Operating Room Leader and
+            My colleague worked on visualizing the story from the perspective of Operating Room Leader and
             Healthcare Exeucutives. Combined, our team lead pitched the story using our dashboard designs of
             different personas to the E-board. <br /> <br />
             The concept was officially approved and is moving into planning and execution. This was one of the
             first triumph in a project outside of robotics driven by user experience at Intuitive Surgical.
           </P>
         </Block>
+      </Content>
+      <Content>
         <Block>
           <SectionDivider>
-            <SectionDividerBg>other stories</SectionDividerBg>
+            <SectionDividerBg>next up</SectionDividerBg>
           </SectionDivider>
-        </Block>
-        <Block>
-          <EnterButton>
-            <Link to={Project2}>
-              <WhiteLink>
-                <ion-icon size="large" name="md-eye" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <ion-icon size="large" name="ios-arrow-round-forward" />
-              </WhiteLink>
-            </Link>
-          </EnterButton>
+          <Link to="/">
+            <ButtonContainer>
+              <ButtonChild left>
+                <Title>About Me</Title>
+                {/* <Subtitle>me</Subtitle> */}
+              </ButtonChild>
+              <ButtonChild>
+                <Image nextBtnImg src={AboutData} />
+              </ButtonChild>
+            </ButtonContainer>
+          </Link>
         </Block>
       </Content>
     </>
   );
 };
-const WhiteLink = styled.a`
-  color: white;
+
+const ButtonChild = styled.div`
+  flex: ${props => (props.left ? '2' : '1')};
+  padding: ${props => (props.left ? '2em 0 2em 2em' : '0')};
+  align-self: flex-end;
 `;
-const EnterButton = styled.button`
+
+const ButtonContainer = styled.div`
   background-color: #222226;
-  border-radius: 8em;
-  padding: 2em 2.6em;
-  color: white;
+  margin: 4em auto;
+  text-align: left;
+  display: flex;
+  max-width: 100%;
+`;
+
+const Title = styled.h3`
+  color: #fff;
+`;
+const Subtitle = styled.h6`
+  color: #fff;
 `;
 
 const SectionDivider = styled.h6`
@@ -613,7 +623,7 @@ const SideRight = styled.div`
 `;
 const Image = styled.img`
   max-width: ${props => (props.small ? '68%' : '100%')};
-  padding-bottom: 1em;
+  padding-bottom: ${props => (props.nextBtnImg ? '0' : '1em')};
   margin: 0 auto;
   display: flex;
 `;

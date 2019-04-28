@@ -44,7 +44,7 @@ class Password2 extends React.Component {
           <h4>
             {' '}
             Enter password to read the rest, or reach out to <br />
-            xinyu.lin.lucy @gmail.com{' '}
+            xinyu.lin.lucy@gmail.com{' '}
           </h4>{' '}
           <Margin />
           <ion-icon size="large" name="md-key" />
