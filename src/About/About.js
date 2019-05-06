@@ -44,50 +44,36 @@ const AboutIntro = () => {
         </FeatureText>
         <h6>prep</h6>
         <FeatureText>
-          My education in psychology and design management helped me traverse the core of design thinking: empathy
-          and process.
+          Building the first UX community at University of Southern California back in 2015 got me started in the
+          field. My education in psychology and design management enabled me to traverse the core of design +
+          product thinking: empathy, process and business accumen.
           <br />
           <br />
         </FeatureText>
         <h6>Practice</h6>
         <FeatureText>
-          Having worked at a variety of project scope, company sizes and industries, I see myself as quite
-          adaptable and aptly T-shaped. In early days of my career, I saw myself excelling at research synthesis
-          and rapid prototyping. But now I see my value really comes through as a glue, a facilitator of processes
-          and of cross-functional efforts.
+          Having worked at a variety of project scope, company sizes and industries, I am aptly T-shaped. In early
+          days of my career, I saw myself excelling at research synthesis and rapid prototyping. But now I see my
+          value really comes through as a glue, a facilitator of processes and of cross-functional efforts.
           <br />
           <br />
         </FeatureText>
         <h6>Growth</h6>
         <FeatureText>
-          In future endeavours, I am looking to gain deeper mentorship into product thinking and hone my craft in
-          interaction design & data visualization, among others (eg. front-end).
+          In future endeavours, I am looking to: <br />
+          - Grow in product thinking <br />
+          - Anchor myself in a meaningful industry <br />
+          - Continue to hone craft and execution
           <br />
           <br />
         </FeatureText>
-        <Image src={Fig2} />
         <WhiteLink
           href="https://drive.google.com/file/d/1-lurzXLBq_RPXejTw7n2AZDMcLhVVVgf/view?usp=sharing"
           target="_blank"
         >
           download résumé
         </WhiteLink>
-      </Section>
-      <Section>
-        <h6>Currently</h6>
-        <FeatureText>
-          - Increasing design-dev harmony (trying React/Framer to rapidly prototype)
-          <br />
-          - Enjoying sounds from Kyle Dion, Daniel Caesar, and my dog - Mochi
-          <br />
-          - Iterating on mental frameworks to make peace with myself
-          <br />
-          - Re-watching Oki Sato’s interview with GQ <br />
-        </FeatureText>
-      </Section>
-      <Section>
-        <FeatureText strike>Did you see this coming?</FeatureText>
-        <Image small src={Fig3} />
+        <Image src={Fig2} />
       </Section>
     </>
   );

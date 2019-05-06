@@ -7,19 +7,19 @@ import Nibbles from '../Nibbles/Nibbles';
 const FooterText = () => {
   return (
     <FooterTextWrap>
-      <WidthLim>
+      <section className="wrap">
         <FeatureText primary>
           Glad you stayed for the ride so far.
           <br />
           <br />
-          Find out more about my journey, values and my dog in
-          <Link to="/about/">
+          Find out more about my design values and some background in
+          <Link to="/about">
             {' '}
             <WhiteLink>About</WhiteLink>
           </Link>
           . For other works, I've accumulated a collection of visual artifacts from my design works old and recent
           in
-          <Link to="/nibbles/">
+          <Link to="/nibbles">
             {' '}
             <WhiteLink>Nibbles</WhiteLink>
           </Link>
@@ -28,27 +28,29 @@ const FooterText = () => {
           <br />
           <Quote>_s/he who has a why can bear any how</Quote>
         </FeatureText>
-      </WidthLim>
-      <Route path="/about/" component={About} />
-      <Route path="/nibbles/" component={Nibbles} />
+      </section>
+      <Route path="/about" component={About} />
+      <Route path="/nibbles" component={Nibbles} />
     </FooterTextWrap>
   );
 };
 
 const FooterTextWrap = styled.div`
-  padding: 4em 0;
+  padding-top: 4em;
   background: #222226;
-`;
-
-const WidthLim = styled.div`
-  width: 60%;
-  margin: 0 auto;
 `;
 const FeatureText = styled.p`
   background: ${props => (props.primary ? '#222226' : '#FFFFFF')};
   color: ${props => (props.primary ? '#FFFFFF' : '#222226')};
-  font-size: 1.6em;
+  @media (min-width: 769px) {
+    font-size: 1.6em;
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    font-size: 1.28em;
+  }
   line-height: 1.6em;
+  margin: 0 auto;
+  padding: 0 auto;
 `;
 
 const WhiteLink = styled.a`

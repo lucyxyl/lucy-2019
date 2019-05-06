@@ -8,20 +8,25 @@ import FooterText from './FooterText';
 
 const Index = () => {
   return (
-    <div>
+    <>
       <Content>
         <Intro />
         <Divider />
         <Work />
       </Content>
       <FooterText />
-    </div>
+    </>
   );
 };
 
 const Content = styled.div`
-  width: 900px;
-  margin: 0 auto;
+  @media (min-width: 769px) {
+    width: 80%;
+    margin: 2em auto;
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    margin: 0 auto;
+  }
 `;
 
 export default Index;

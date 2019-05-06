@@ -9,22 +9,6 @@ p,
   color: #48474c;
   line-height: 1.6em;
 }
-button {
-  font-family: minionBold;
-  background-color: none;
-  color: #222226;
-  border: none;
-}
-input:focus,
-button:focus {
-  outline: 0;
-}
-a:hover,
-button:hover {
-  opacity: 0.6;
-  transition: 0.5s;
-}
-
 h2,
 h3,
 h4,
@@ -32,13 +16,8 @@ h5,
 h6 {
   font-family: 'Hind', sans-serif;
 }
-h1 {
-  font-size: 4em;
-}
 h2,
 h3 {
-  font-size: 1.6em;
-  line-height: 2.2em;
   font-weight: 600;
   color: #222226;
 }
@@ -51,47 +30,192 @@ h6 {
   color: #716f7d;
   font-weight: 400;
 }
-
-h4 {
-  font-size: 1.4em;
-}
-
-h6 {
-  font-size: 1.2em;
-  line-height: 3em;
-}
-
-h5 {
-  font-size: 1.2em;
-  line-height: 1.6em;
-  text-align: center;
-}
-
 h6 {
   text-transform: uppercase;
+}
+/* responsive typography */
+
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 4em;
+  }
+  h2,
+  h3 {
+    font-size: 1.6em;
+    line-height: 2.2em;
+  }
+  h4 {
+    font-size: 1.4em;
+  }
+  h5 {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: center;
+  }
+  h6 {
+    font-size: 1.2em;
+    line-height: 3em;
+  }
+  p {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  h1 {
+    font-size: 3.2em;
+  }
+  h2,
+  h3 {
+    font-size: 1.4em;
+    line-height: 2em;
+  }
+  h4 {
+    font-size: 1.4em;
+  }
+  h5 {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: center;
+  }
+  h6 {
+    font-size: 1em;
+    line-height: 3em;
+  }
+  p {
+    font-size: 1.2em;
+  }
 }
 
 .pfeature {
   font-size: 1.6em;
 }
-
 .pregular {
   font-size: 1.4em;
+}
+
+/* responsive spacing */
+
+.wrap {
+  padding: 2em 0;
+}
+@media screen and (min-width: 1024px) {
+  .wrap {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 769) and (max-width: 1023px) {
+  .wrap {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* responsive nav styles */
+@media screen and (min-width: 769px) {
+  #nav-desktop {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em auto;
+    width: 80%;
+  }
+  #nav-mobile {
+    display: none;
+  }
+  #nav-desktop-list {
+    display: flex;
+  }
+  #logo {
+    width: 48px;
+    height: 48px;
+  }
+  #nav-logo {
+    height: 48px;
+  }
+  #nav-desktop-list li {
+    padding: 0.1em 2em;
+    font-family: 'Hind', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 2em;
+    font-size: 1.2em;
+  }
+  #nav-desktop-list li:last-child {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #nav-desktop {
+    display: none;
+  }
+  #nav-mobile {
+    margin: 1em auto;
+    width: 90%;
+  }
+  #nav-mobile-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  #logo {
+    width: 40px;
+    height: 40px;
+  }
+  #nav-logo {
+    height: 40px;
+  }
+  #menu-cta {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+#nav-logo,
+#nav-mobile-menu-cta-wrap {
+  align-self: center;
+}
+
+/* overriding defaults */
+
+button {
+  font-family: minionBold;
+  background-color: #fff;
+  color: #222226;
+  border: none;
+}
+
+input:focus,
+button:focus {
+  outline: 0;
+}
+a {
+  text-decoration: none;
+  color: #222226;
+}
+ul {
+  list-style-type: none;
+}
+a:hover,
+button:hover {
+  opacity: 0.6;
+  transition: 0.5s;
 }
 
 img {
   vertical-align: bottom;
 }
 
-a {
-  text-decoration: none;
-  color: #222226;
-}
 ::selection {
-  background: #fefbd8; /* WebKit/Blink Browsers */
+  background: #f8e71c; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #fefbd8; /* Gecko Browsers */
+  background: #f8e71c; /* Gecko Browsers */
 }
 * {
   margin: 0;

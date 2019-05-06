@@ -5,7 +5,7 @@ import Project from './Project';
 import Project1Cover from '../Image/Project1_Cover.png';
 import Project3Cover from '../Image/Project2_Cover.png';
 import Project2Cover from '../Image/Project3_Cover.png';
-import Project4Cover from '../Image/Project4_Cover.png';
+// import Project4Cover from '../Image/Project4_Cover.png';
 
 const projects = [
   {
@@ -29,15 +29,7 @@ const projects = [
     image: Project3Cover,
     subtitle: 'Intuitive Surgical',
     details:
-      'When limitations breed creativity \u2014	a tale of 6 multidisciplinary thinkers + 5 sprints to prove an ambitious vision with the help of storytelling and rapid prototyping.',
-    link: '/isi-ecosystem/',
-  },
-  {
-    title: 'Raising Access to Health Care',
-    image: Project4Cover,
-    subtitle: 'SCAD MA PROJECT',
-    details:
-      'What does it truly take to be accessible? To answer this, I reframed the term to create a toolkit for teams to guage accessibility from a progressively zoomed-in lens: System, Environment & Personal.',
+      'When limitations breed creativity \u2014	a tale of 6 multidisciplinary thinkers with 5 sprints to prove an ambitious vision with the help of storytelling and rapid prototyping.',
     link: '/isi-ecosystem/',
   },
 ];

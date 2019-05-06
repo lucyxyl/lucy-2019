@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 const Intro = () => {
   return (
-    <Section>
+    <section className="wrap">
       <IntroSection>
         <IntroTop>
-          <Title>Lucy.</Title>
+          <h1>Lucy.</h1>
           <Subtitle gap>[loo-see]</Subtitle>
           <Button>
             <a
@@ -33,19 +33,19 @@ const Intro = () => {
           </FeatureText>
         </IntroDetails>
       </IntroSection>
-    </Section>
+    </section>
   );
 };
 
-const Section = styled.section`
-  padding: 4em 0;
-`;
 const IntroTop = styled.div`
   display: flex;
-  padding: 0 0 2em 0;
+  padding-bottom: 0;
+  @media (min-width: 320px) and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const IntroMiddle = styled.div`
-  padding: 0 0 2em 0;
+  padding-bottom: 2em;
 `;
 
 const Subtitle = styled.h6`
@@ -55,6 +55,9 @@ const Subtitle = styled.h6`
   margin: ${props => (props.line ? '10px 0 20px' : 'none')};
   width: 40%;
   font-family: MinionRegular;
+  @media (min-width: 320px) and (max-width: 768px) {
+    display: none;
+  }
 `;
 const SubtitleBg = styled.span`
   background: #ffffff;
@@ -64,20 +67,26 @@ const SubtitleBg = styled.span`
 const FeatureText = styled.p`
   background: ${props => (props.primary ? '#222226' : '#FFFFFF')};
   color: ${props => (props.primary ? '#FFFFFF' : '#222226')};
-  font-size: 1.6em;
   line-height: 1.6em;
+  @media (min-width: 769px) {
+    font-size: 1.6em;
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    font-size: 1.28em;
+  }
 `;
 
 const Button = styled.button`
-  font-size: 1.6em;
   line-height: 1.6em;
-  margin-left: auto;
-`;
-
-const Title = styled.p`
-  font-family: minionBold;
-  font-size: 4em;
-  color: #222226;
+  background-color: #fff;
+  @media (min-width: 769px) {
+    font-size: 1.6em;
+    margin-left: auto;
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    font-size: 1.28em;
+    display: none;
+  }
 `;
 
 const IntroSection = styled.div``;

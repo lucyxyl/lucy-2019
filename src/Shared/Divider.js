@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 const Divider = () => {
   return (
-    <div>
+    <section className="wrap">
       <SectionDivider>
         <SectionDividerBg>Selected Work</SectionDividerBg>
       </SectionDivider>
-    </div>
+    </section>
   );
 };
 
@@ -17,6 +17,7 @@ const SectionDivider = styled.h6`
   border-bottom: 1px solid #d0d0d0;
   line-height: 0.1em;
   margin: 10px 0 20px;
+  color: #222226;
 `;
 
 const SectionDividerBg = styled.span`

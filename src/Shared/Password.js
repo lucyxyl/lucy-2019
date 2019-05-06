@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 import { withRouter } from 'react-router';
 
-class Password extends React.Component {
+class Password extends Component {
   constructor(props) {
     super(props);
     this.state = {
