@@ -22,7 +22,7 @@ const Index = () => {
 const Content = styled.div`
   @media (min-width: 769px) {
     width: 80%;
-    margin: 2em auto;
+    margin: 4em auto;
   }
   @media (min-width: 320px) and (max-width: 768px) {
     margin: 0 auto;

@@ -23,9 +23,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       active: false,
-      p1Authed: false,
-      p2Authed: false,
-      p3Authed: false,
+      pAuthed: false,
     };
   }
   navToggler = () => {
@@ -84,9 +82,9 @@ class App extends React.Component {
             <Route exact path="/" component={Index} />
             <Route exact path="/nibbles" component={Nibbles} />
             <Route exact path="/about" component={About} />
-            <Route exact path="/appneta-search" render={props => <Project1 isAuthed={this.state.p1Authed} />} />
-            <Route exact path="/isi-salescontent" render={props => <Project2 isAuthed={this.state.p2Authed} />} />
-            <Route exact path="/isi-ecosystem" render={props => <Project3 isAuthed={this.state.p3Authed} />} />
+            <Route exact path="/appneta-search" render={props => <Project1 isAuthed={this.state.pAuthed} />} />
+            <Route exact path="/isi-salescontent" render={props => <Project2 isAuthed={this.state.pAuthed} />} />
+            <Route exact path="/isi-ecosystem" render={props => <Project3 isAuthed={this.state.pAuthed} />} />
             <Footer>
               <FooterBar>
                 <FooterItems>
@@ -140,6 +138,7 @@ const FooterBar = styled.ul`
   justify-content: space-between;
   width: 80%;
   margin: 2em auto;
+  list-style-type: none;
   @media (min-width: 320px) and (max-width: 768px) {
     width: 90%;
     flex-direction: column;

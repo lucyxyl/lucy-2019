@@ -12,7 +12,7 @@ const FooterText = () => {
           Glad you stayed for the ride so far.
           <br />
           <br />
-          Find out more about my design values and some background in
+          Find out more about my roots, story, and design values in
           <Link to="/about">
             {' '}
             <WhiteLink>About</WhiteLink>

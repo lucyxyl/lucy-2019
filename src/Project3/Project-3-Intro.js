@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Project3Intro = () => {
   return (
     <div>
-      <Content>
+      <section className="wrap">
         <h1>Shaping a Surgical Ecosystem.</h1>
         <Subtitle line>
           <SubtitleBg>INTUITIVE surgical</SubtitleBg>
@@ -19,11 +19,10 @@ const Project3Intro = () => {
           prototyping. Specifically, I led affinity mapping exercises, concepted storyboards and prototyped the
           designs for surgeon’s user story.
         </Txt>
-      </Content>
+      </section>
     </div>
   );
 };
-const Content = styled.div``;
 
 const Subtitle = styled.h6`
   line-height: ${props => (props.line ? '0.1em' : '4em')};
@@ -32,6 +31,9 @@ const Subtitle = styled.h6`
   width: 40%;
   padding-top: 1em;
   margin: 1em 0;
+  @media (min-width: 320px) and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const SubtitleBg = styled.span`
   background: #ffffff;

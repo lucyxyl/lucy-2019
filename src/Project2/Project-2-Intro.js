@@ -4,10 +4,10 @@ import styled from 'styled-components';
 const Project2Intro = () => {
   return (
     <div>
-      <Content>
+      <section className="wrap">
         <h1>Recontextualizing Sales Content.</h1>
         <Subtitle line>
-          <SubtitleBg>INTUITIVE surgical</SubtitleBg>
+          <SubtitleBg>intuitive surgical</SubtitleBg>
         </Subtitle>
         <Txt>
           Intuitive Surgical is the home of surgical robots, enabling surgeons to achieve minimally invasive
@@ -40,11 +40,10 @@ const Project2Intro = () => {
             </Listln>
           </Row>
         </InnerBlockLeft>
-      </Content>
+      </section>
     </div>
   );
 };
-const Content = styled.div``;
 
 const Subtitle = styled.h6`
   line-height: ${props => (props.line ? '0.1em' : '4em')};
@@ -53,6 +52,9 @@ const Subtitle = styled.h6`
   width: 40%;
   padding-top: 1em;
   margin: 1em 0;
+  @media (min-width: 320px) and (max-width: 768px) {
+    width: 70%;
+  }
 `;
 const SubtitleBg = styled.span`
   background: #ffffff;

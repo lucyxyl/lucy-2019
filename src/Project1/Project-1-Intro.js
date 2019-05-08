@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Project1Intro = () => {
   return (
     <div>
-      <Content>
+      <section className="wrap">
         <h1>Scaling the Search Experience.</h1>
         <Subtitle line>
           <SubtitleBg>Appneta</SubtitleBg>
@@ -43,11 +43,10 @@ const Project1Intro = () => {
             <Listln>Introduce workshops to encourage cross-functional info-sharing and co-creation.</Listln>
           </Row>
         </InnerBlockLeft>
-      </Content>
+      </section>
     </div>
   );
 };
-const Content = styled.div``;
 
 const Subtitle = styled.h6`
   line-height: ${props => (props.line ? '0.1em' : '4em')};
@@ -62,8 +61,6 @@ const SubtitleBg = styled.span`
   padding: 0 0.5em 0 0;
 `;
 const Txt = styled.p`
-  font-size: 1.4em;
-  line-height: 1.6em;
   padding-top: 1em;
 `;
 

@@ -418,6 +418,16 @@ const Project1Protected = () => {
   );
 };
 
+const Content = styled.div`
+  @media (min-width: 769px) {
+    width: 800px;
+    margin: 2em auto;
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    margin: 0 auto;
+  }
+`;
+
 const Sidewidth = styled.div`
   max-width: 900px;
   margin: 0 auto;
@@ -454,11 +464,6 @@ const Title = styled.h3`
 `;
 const Subtitle = styled.h6`
   color: #fff;
-`;
-
-const Content = styled.div`
-  margin: 0 auto;
-  width: 800px;
 `;
 
 const Image = styled.img`

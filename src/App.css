@@ -62,7 +62,8 @@ h6 {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   h1 {
-    font-size: 3.2em;
+    font-size: 3em;
+    word-wrap: break-word;
   }
   h2,
   h3 {
@@ -70,7 +71,7 @@ h6 {
     line-height: 2em;
   }
   h4 {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   h5 {
     font-size: 1.2em;
@@ -198,7 +199,7 @@ a {
   text-decoration: none;
   color: #222226;
 }
-ul {
+nav ul {
   list-style-type: none;
 }
 a:hover,
