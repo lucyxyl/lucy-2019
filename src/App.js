@@ -88,14 +88,14 @@ class App extends React.Component {
             <Footer>
               <FooterBar>
                 <FooterItems>
-                  <img src={logow} alt="light logo" />
+                  <Image src={logow} alt="light logo" />
                 </FooterItems>
                 <FooterItems>
                   <FeatureText primary>Design & Code by Lucy.</FeatureText>
                 </FooterItems>
                 <FooterItems>
                   <a href="https://www.linkedin.com/in/lucyxylin" target="_blank" rel="noopener noreferrer">
-                    <img src={inlogo} alt="linkedin logo" />
+                    <Image src={inlogo} alt="linkedin logo" />
                   </a>
                 </FooterItems>
               </FooterBar>
@@ -106,6 +106,12 @@ class App extends React.Component {
     );
   }
 }
+const Image = styled.img`
+  width: 100%;
+  @media (min-width: 320px) and (max-width: 425px) {
+    width: 80%;
+  }
+`;
 const NavMobileList = styled.ul`
   display: ${props => (props.active ? 'flex' : 'none')};
   flex-direction: column;
@@ -139,9 +145,12 @@ const FooterBar = styled.ul`
   width: 80%;
   margin: 2em auto;
   list-style-type: none;
-  @media (min-width: 320px) and (max-width: 768px) {
+  @media (min-width: 320px) and (max-width: 425px) {
     width: 90%;
     flex-direction: column;
+  }
+  @media (min-width: 426px) and (max-width: 768px) {
+    width: 90%;
   }
 `;
 

@@ -26,6 +26,7 @@ const AboutIntro = () => {
             </IntroDetails>
           </IntroSection>
         </Section>
+        <Margin />
         <Section>
           <SectionDivider>
             <SectionDividerBg>DESIGN VALUES</SectionDividerBg>
@@ -73,8 +74,11 @@ const AboutIntro = () => {
             href="https://drive.google.com/file/d/1-lurzXLBq_RPXejTw7n2AZDMcLhVVVgf/view?usp=sharing"
             target="_blank"
           >
-            download résumé
+            download résumé &nbsp;
+            <ion-icon name="ios-arrow-round-forward" />
           </WhiteLink>
+          <Margin />
+
           <Image src={Fig2} />
         </Section>
       </section>
@@ -87,13 +91,14 @@ const Margin = styled.div`
 `;
 const WhiteLink = styled.a`
   font-size: 1.6em;
-  line-height: 1.6em;
   font-family: 'minionBold';
   background-color: #222226;
   color: #ffffff;
   padding: 1em 2em;
-  margin: 0 auto;
   display: flex;
+  @media (min-width: 320px) and (max-width: 768px) {
+    font-size: 1.2em;
+  }
 `;
 
 const SectionDivider = styled.h6`
@@ -111,7 +116,7 @@ const SectionDividerBg = styled.span`
 
 const Image = styled.img`
   max-width: ${props => (props.small ? '40%' : '100%')};
-  margin: 4em auto;
+  margin: 2em auto;
   left: ${props => (props.left ? '0' : 'auto')};
 `;
 

@@ -25,7 +25,7 @@ const Content = styled.div`
     margin: 4em auto;
   }
   @media (min-width: 320px) and (max-width: 768px) {
-    margin: 0 auto;
+    margin: 2em auto;
   }
 `;
 

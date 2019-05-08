@@ -130,17 +130,18 @@ const ParentContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @media (min-width: 320px) and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Container = styled.div`
   position: relative;
-  width: 48%;
-  margin: ${props => (props.left ? '1em 1em 1em 0' : '1em 0 1em 1em')};
+  margin: 2em auto;
 `;
 const Image = styled.img`
-  display: block;
+  display: flex;
   width: 100%;
-  height: auto;
 `;
 const Overlay = styled.div`
   position: absolute;
@@ -170,6 +171,9 @@ const OverlayText = styled.p`
   transform: translate(-50%, -50%);
   opacity: 1;
   font-family: minionBold;
+  @media (min-width: 320px) and (max-width: 768px) {
+    font-size: 1.4em;
+  }
 `;
 
 export default NibbleCard;
