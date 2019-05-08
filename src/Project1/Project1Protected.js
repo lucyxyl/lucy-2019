@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { VerticleButton as ScrollUpButton } from 'react-scroll-up-button';
 
 import styled from 'styled-components';
 import SidebySide1 from './SidebySide';
@@ -40,6 +41,7 @@ import Demo11 from '../Image/Project1_Demo11.png';
 const Project1Protected = () => {
   return (
     <div>
+      <ScrollUpButton AnimationDuration={400} />
       <Fullwidth>
         <Image src={Cover1} alt="cover" />
       </Fullwidth>
@@ -52,9 +54,11 @@ const Project1Protected = () => {
             unintelligent search as the first step to remove the scalability bottlenecks.
           </P>
         </Block>
-
+      </Content>
+      <Sidewidth>
         <SidebySide1 />
-
+      </Sidewidth>
+      <Content>
         <Block big>
           <Image src={Fig1} />
           <h5>
@@ -397,7 +401,7 @@ const Project1Protected = () => {
           <SectionDivider>
             <SectionDividerBg>other story</SectionDividerBg>
           </SectionDivider>
-          <Link to="/">
+          <Link to="/isi-salescontent">
             <ButtonContainer>
               <ButtonChild left>
                 <Title>Recontextualizing Sales Content</Title>
@@ -414,6 +418,10 @@ const Project1Protected = () => {
   );
 };
 
+const Sidewidth = styled.div`
+  max-width: 900px;
+  margin: 0 auto;
+`;
 const ButtonChild = styled.div`
   flex: ${props => (props.left ? '2' : '1')};
   padding: ${props => (props.left ? '2em 0 2em 2em' : '0')};

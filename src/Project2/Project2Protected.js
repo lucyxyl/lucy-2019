@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { VerticleButton as ScrollUpButton } from 'react-scroll-up-button';
 
 import PFig3 from '../Image/ProjectData_3.png';
 
@@ -32,6 +33,7 @@ import Demo2 from '../Image/Project2_Demo2.mov';
 const Project2Protected = () => {
   return (
     <>
+      <ScrollUpButton AnimationDuration={400} />
       <Fullwidth>
         <Image src={Cover2} />
       </Fullwidth>
@@ -506,7 +508,7 @@ const Project2Protected = () => {
           <SectionDivider>
             <SectionDividerBg>other story</SectionDividerBg>
           </SectionDivider>
-          <Link to="/">
+          <Link to="/isi-ecosystem">
             <ButtonContainer>
               <ButtonChild left>
                 <Title>Shaping a Surgical Ecosystem</Title>

@@ -1,22 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { withRouter } from 'react-router';
 
 import Project3Protected from './Project3Protected';
 import Project3Public from './Project3Public';
 import ScrollToTop from '../Shared/ScrollToTop';
+import ProtectedRoute from '../ProtectedRoute';
 
 const ScrollToTopConnected = withRouter(ScrollToTop);
 
-const Project3 = () => (
-  <Router>
-    <ScrollToTopConnected>
-      <>
-        <Route path="/isi-ecosystem/" exact component={Project3Public} />
-        <Route path="/isi-ecosystem/protected/" component={Project3Protected} />
-      </>
-    </ScrollToTopConnected>
-  </Router>
+const Project3 = props => (
+  <ScrollToTopConnected>
+    <>
+      <ProtectedRoute public={Project3Public} protected={Project3Protected} isAuthed={props.isAuthed} />
+    </>
+  </ScrollToTopConnected>
 );
 
 export default Project3;

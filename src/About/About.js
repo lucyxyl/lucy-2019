@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import Fig1 from '../Image/About_Fig1.png';
 import Fig2 from '../Image/About_Fig2.png';
-import Fig3 from '../Image/About_Fig3.png';
 
 const AboutIntro = () => {
   return (

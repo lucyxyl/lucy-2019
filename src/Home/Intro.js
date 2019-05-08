@@ -12,6 +12,7 @@ const Intro = () => {
             <a
               href="https://drive.google.com/file/d/1-lurzXLBq_RPXejTw7n2AZDMcLhVVVgf/view?usp=sharing"
               target="_blank"
+              rel="noopener noreferrer"
             >
               résumé
             </a>

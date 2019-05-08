@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { VerticleButton as ScrollUpButton } from 'react-scroll-up-button';
 
 import styled from 'styled-components';
-import AboutData from '../Image/AboutData.png';
 
 import Cover3 from '../Image/Project3_HeaderImg.png';
 import Fig1 from '../Image/Project3_Fig1.png';
@@ -39,6 +38,8 @@ import Fig30 from '../Image/Project3_Fig30.png';
 const Project2Protected = () => {
   return (
     <>
+      <ScrollUpButton AnimationDuration={400} />
+
       <Fullwidth>
         <Image src={Cover3} />
       </Fullwidth>
@@ -82,7 +83,7 @@ const Project2Protected = () => {
             The main goals were:
           </P>
           <Ul>
-            <Li>Define the vision fo a united and holisticc user experience</Li>
+            <Li>Define the vision of a united and holisticc user experience</Li>
             <Li>Consider legacy, in-flight & future service initiatives</Li>
             <Li>Develop a roadmap with feasible steps to reach there</Li>
           </Ul>
@@ -534,61 +535,10 @@ const Project2Protected = () => {
           </P>
         </Block>
       </Content>
-      <Content>
-        <Block>
-          <SectionDivider>
-            <SectionDividerBg>next up</SectionDividerBg>
-          </SectionDivider>
-          <Link to="/">
-            <ButtonContainer>
-              <ButtonChild left>
-                <Title>About Me</Title>
-                {/* <Subtitle>me</Subtitle> */}
-              </ButtonChild>
-              <ButtonChild>
-                <Image nextBtnImg src={AboutData} />
-              </ButtonChild>
-            </ButtonContainer>
-          </Link>
-        </Block>
-      </Content>
     </>
   );
 };
 
-const ButtonChild = styled.div`
-  flex: ${props => (props.left ? '2' : '1')};
-  padding: ${props => (props.left ? '2em 0 2em 2em' : '0')};
-  align-self: flex-end;
-`;
-
-const ButtonContainer = styled.div`
-  background-color: #222226;
-  margin: 4em auto;
-  text-align: left;
-  display: flex;
-  max-width: 100%;
-`;
-
-const Title = styled.h3`
-  color: #fff;
-`;
-const Subtitle = styled.h6`
-  color: #fff;
-`;
-
-const SectionDivider = styled.h6`
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #d0d0d0;
-  line-height: 0.1em;
-  margin: 10px 0 20px;
-`;
-
-const SectionDividerBg = styled.span`
-  background: #ffffff;
-  padding: 0 1em;
-`;
 const Quote = styled.h4`
   text-align: center;
 `;

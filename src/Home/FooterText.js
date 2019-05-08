@@ -53,7 +53,7 @@ const FeatureText = styled.p`
   padding: 0 auto;
 `;
 
-const WhiteLink = styled.a`
+const WhiteLink = styled.span`
   color: #fff;
   text-decoration: underline;
 `;

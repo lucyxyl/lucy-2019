@@ -11,8 +11,13 @@ const Project1Public = () => (
 );
 
 const Content = styled.div`
-  width: 800px;
-  margin: 2em auto;
+  @media (min-width: 769px) {
+    width: 80%;
+    margin: 2em auto;
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    margin: 0 auto;
+  }
 `;
 
 export default Project1Public;

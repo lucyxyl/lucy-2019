@@ -37,7 +37,14 @@ const projects = [
 const Work = () => (
   <ProjectContainer>
     {projects.map(p => (
-      <Project title={p.title} image={p.image} subtitle={p.subtitle} details={p.details} link={p.link} />
+      <Project
+        key={p.title}
+        title={p.title}
+        image={p.image}
+        subtitle={p.subtitle}
+        details={p.details}
+        link={p.link}
+      />
     ))}
   </ProjectContainer>
 );

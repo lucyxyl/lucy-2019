@@ -1,22 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { withRouter } from 'react-router';
 
 import Project1Protected from './Project1Protected';
 import Project1Public from './Project1Public';
 import ScrollToTop from '../Shared/ScrollToTop';
+import ProtectedRoute from '../ProtectedRoute';
 
 const ScrollToTopConnected = withRouter(ScrollToTop);
 
-const Project1 = () => (
-  <Router>
-    <ScrollToTopConnected>
-      <>
-        <Route path="/appneta-search/" exact component={Project1Public} />
-        <Route path="/appneta-search/protected/" component={Project1Protected} />
-      </>
-    </ScrollToTopConnected>
-  </Router>
+const Project1 = props => (
+  <ScrollToTopConnected>
+    <>
+      <ProtectedRoute public={Project1Public} protected={Project1Protected} isAuthed={props.isAuthed} />
+    </>
+  </ScrollToTopConnected>
 );
 
 export default Project1;

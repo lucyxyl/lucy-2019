@@ -81,12 +81,12 @@ class App extends React.Component {
                 </Link>
               </NavMobileList>
             </nav>
-            <Route path="" exact component={Index} />
-            <Route path="/nibbles" component={Nibbles} />
-            <Route path="/about" component={About} />
-            <Route path="/appneta-search" render={props => <Project1 isAuthed={this.state.p1Authed} />} />
-            <Route path="/isi-salescontent" render={props => <Project2 isAuthed={this.state.p2Authed} />} />
-            <Route path="/isi-ecosystem" render={props => <Project3 isAuthed={this.state.p3Authed} />} />
+            <Route exact path="/" component={Index} />
+            <Route exact path="/nibbles" component={Nibbles} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/appneta-search" render={props => <Project1 isAuthed={this.state.p1Authed} />} />
+            <Route exact path="/isi-salescontent" render={props => <Project2 isAuthed={this.state.p2Authed} />} />
+            <Route exact path="/isi-ecosystem" render={props => <Project3 isAuthed={this.state.p3Authed} />} />
             <Footer>
               <FooterBar>
                 <FooterItems>
@@ -96,7 +96,7 @@ class App extends React.Component {
                   <FeatureText primary>Design & Code by Lucy.</FeatureText>
                 </FooterItems>
                 <FooterItems>
-                  <a href="https://www.linkedin.com/in/lucyxylin" target="_blank">
+                  <a href="https://www.linkedin.com/in/lucyxylin" target="_blank" rel="noopener noreferrer">
                     <img src={inlogo} alt="linkedin logo" />
                   </a>
                 </FooterItems>
