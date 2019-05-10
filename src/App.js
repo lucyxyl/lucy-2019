@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { withRouter } from 'react-router';
 import styled from 'styled-components';
 import ScrollToTop from './Shared/ScrollToTop';
 import logo from './Image/logo.svg';
@@ -16,8 +15,6 @@ import Project3 from './Project3/Project-3';
 
 import './App.css';
 
-const ScrollToTopConnected = withRouter(ScrollToTop);
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -25,6 +22,10 @@ class App extends React.Component {
       active: false,
       pAuthed: false,
     };
+  }
+
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
   }
 
   onAuthSuccess = () => {
@@ -41,7 +42,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <ScrollToTopConnected>
+        <ScrollToTop>
           <>
             <nav id="nav-desktop">
               <div id="nav-logo">
@@ -120,7 +121,7 @@ class App extends React.Component {
               </FooterBar>
             </Footer>
           </>
-        </ScrollToTopConnected>
+        </ScrollToTop>
       </Router>
     );
   }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 import { withRouter } from 'react-router';
+import ScrollToTop from './ScrollToTop';
 
 class Password extends Component {
   constructor(props) {
@@ -34,37 +35,39 @@ class Password extends Component {
 
   render() {
     return (
-      <div>
-        <section className="wrap">
-          <Block>
-            <SectionDivider>
-              <SectionDividerBg> The story </SectionDividerBg>
-            </SectionDivider>
-          </Block>
-          <InnerBlock>
-            <h4>
-              {' '}
-              Enter password to read the rest, or reach out to
-              <br /> xinyu.lin.lucy@gmail.com{' '}
-            </h4>{' '}
-            <Margin />
-            <ion-icon size="large" name="md-key" />
-            <Margin />
-            <PasswordForm onSubmit={this.onFormSubmit}>
-              <PasswordField
-                placeholder="Password"
-                type="password"
-                value={this.state.userSecret}
-                onChange={this.handleInput}
-              />
-              <EnterPassword onClick={this.handleClick}>
-                <ion-icon size="large" name="ios-arrow-round-forward" />
-              </EnterPassword>
-            </PasswordForm>
-            <Margin />
-          </InnerBlock>
-        </section>
-      </div>
+      <ScrollToTop>
+        <>
+          <section className="wrap">
+            <Block>
+              <SectionDivider>
+                <SectionDividerBg> The story </SectionDividerBg>
+              </SectionDivider>
+            </Block>
+            <InnerBlock>
+              <h4>
+                {' '}
+                Enter password to read the rest, or reach out to
+                <br /> xinyu.lin.lucy@gmail.com{' '}
+              </h4>{' '}
+              <Margin />
+              <ion-icon size="large" name="md-key" />
+              <Margin />
+              <PasswordForm onSubmit={this.onFormSubmit}>
+                <PasswordField
+                  placeholder="Password"
+                  type="password"
+                  value={this.state.userSecret}
+                  onChange={this.handleInput}
+                />
+                <EnterPassword onClick={this.handleClick}>
+                  <ion-icon size="large" name="ios-arrow-round-forward" />
+                </EnterPassword>
+              </PasswordForm>
+              <Margin />
+            </InnerBlock>
+          </section>
+        </>
+      </ScrollToTop>
     );
   }
 }
