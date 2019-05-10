@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { VerticleButton as ScrollUpButton } from 'react-scroll-up-button';
+import styled from 'styled-components';
+import Project2Intro from './Project-2-Intro';
 
 import PFig3 from '../Image/ProjectData_3.png';
-
-import styled from 'styled-components';
 
 import Cover2 from '../Image/Project2_HeaderImg.png';
 import Fig1 from '../Image/Project2_Fig1.png';
@@ -33,10 +33,14 @@ import Demo2 from '../Image/Project2_Demo2.mov';
 const Project2Protected = () => {
   return (
     <>
+      <Block>
+        <Project2Intro />
+      </Block>
       <ScrollUpButton AnimationDuration={400} />
       <Fullwidth>
         <Image src={Cover2} />
       </Fullwidth>
+
       <Content>
         <Block>
           <Header center>A LITTLE HISTORY</Header>

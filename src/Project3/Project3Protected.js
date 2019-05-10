@@ -2,6 +2,7 @@ import React from 'react';
 import { VerticleButton as ScrollUpButton } from 'react-scroll-up-button';
 
 import styled from 'styled-components';
+import Project3Intro from './Project-3-Intro';
 
 import Cover3 from '../Image/Project3_HeaderImg.png';
 import Fig1 from '../Image/Project3_Fig1.png';
@@ -38,6 +39,9 @@ import Fig30 from '../Image/Project3_Fig30.png';
 const Project2Protected = () => {
   return (
     <>
+      <Block>
+        <Project3Intro />
+      </Block>
       <ScrollUpButton AnimationDuration={400} />
 
       <Fullwidth>

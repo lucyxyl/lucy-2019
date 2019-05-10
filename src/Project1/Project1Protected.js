@@ -40,7 +40,7 @@ import Demo11 from '../Image/Project1_Demo11.png';
 
 const Project1Protected = () => {
   return (
-    <div>
+    <>
       <ScrollUpButton AnimationDuration={400} />
       <Fullwidth>
         <Image src={Cover1} alt="cover" />
@@ -414,7 +414,7 @@ const Project1Protected = () => {
           </Link>
         </Block>
       </Content>
-    </div>
+    </>
   );
 };
 
