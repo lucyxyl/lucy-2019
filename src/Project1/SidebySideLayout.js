@@ -15,7 +15,7 @@ const SidebySideLayout = props => (
 );
 
 SidebySideLayout.propTypes = {
-  image1: PropTypes.object.isRequired,
+  image1: PropTypes.string.isRequired,
   title1: PropTypes.string.isRequired,
   details1: PropTypes.string.isRequired,
 };

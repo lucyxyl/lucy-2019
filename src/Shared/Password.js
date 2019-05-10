@@ -16,7 +16,7 @@ class Password extends Component {
       .get(`/authenticate.php?secret=${this.state.userSecret}`)
       .then(response => {
         if (response.data === true) {
-          this.props.history.push('/appneta-search/protected/');
+          this.props.onAuthSuccess();
         }
       })
       .catch(error => console.log(error));

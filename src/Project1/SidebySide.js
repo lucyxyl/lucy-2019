@@ -37,7 +37,7 @@ const SidebySide1 = () => {
   return (
     <>
       {sidedata1.map(s => (
-        <SidebySideLayout image1={s.image} title1={s.title} details1={s.details} />
+        <SidebySideLayout key={s.title} image1={s.image} title1={s.title} details1={s.details} />
       ))}
     </>
   );

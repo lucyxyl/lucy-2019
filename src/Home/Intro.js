@@ -40,13 +40,14 @@ const Intro = () => {
 
 const IntroTop = styled.div`
   display: flex;
-  padding-bottom: 0;
+  padding: 0 0 2em 0;
   @media (min-width: 320px) and (max-width: 768px) {
     flex-direction: column;
+    padding: 0;
   }
 `;
 const IntroMiddle = styled.div`
-  padding-bottom: 2em;
+  padding: 0 0 2em 0;
 `;
 
 const Subtitle = styled.h6`

@@ -11,7 +11,12 @@ const ScrollToTopConnected = withRouter(ScrollToTop);
 const Project1 = props => (
   <ScrollToTopConnected>
     <>
-      <ProtectedRoute public={Project1Public} protected={Project1Protected} isAuthed={props.isAuthed} />
+      <ProtectedRoute
+        public={Project1Public}
+        protected={Project1Protected}
+        isAuthed={props.isAuthed}
+        onAuthSuccess={props.onAuthSuccess}
+      />
     </>
   </ScrollToTopConnected>
 );

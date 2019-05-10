@@ -26,6 +26,13 @@ class App extends React.Component {
       pAuthed: false,
     };
   }
+
+  onAuthSuccess = () => {
+    this.setState({
+      pAuthed: true,
+    });
+  };
+
   navToggler = () => {
     this.setState({
       active: !this.state.active,
@@ -82,9 +89,21 @@ class App extends React.Component {
             <Route exact path="/" component={Index} />
             <Route exact path="/nibbles" component={Nibbles} />
             <Route exact path="/about" component={About} />
-            <Route exact path="/appneta-search" render={props => <Project1 isAuthed={this.state.pAuthed} />} />
-            <Route exact path="/isi-salescontent" render={props => <Project2 isAuthed={this.state.pAuthed} />} />
-            <Route exact path="/isi-ecosystem" render={props => <Project3 isAuthed={this.state.pAuthed} />} />
+            <Route
+              exact
+              path="/appneta-search"
+              render={props => <Project1 isAuthed={this.state.pAuthed} onAuthSuccess={this.onAuthSuccess} />}
+            />
+            <Route
+              exact
+              path="/isi-salescontent"
+              render={props => <Project2 isAuthed={this.state.pAuthed} onAuthSuccess={this.onAuthSuccess} />}
+            />
+            <Route
+              exact
+              path="/isi-ecosystem"
+              render={props => <Project3 isAuthed={this.state.pAuthed} onAuthSuccess={this.onAuthSuccess} />}
+            />
             <Footer>
               <FooterBar>
                 <FooterItems>

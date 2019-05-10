@@ -16,7 +16,7 @@ class Password2 extends React.Component {
       .get(`/authenticate.php?secret=${this.state.userSecret}`)
       .then(response => {
         if (response.data === true) {
-          this.props.history.push('/isi-salescontent/protected/');
+          this.props.history.push('/isi-salescontent/');
         }
       })
       .catch(error => console.log(error));

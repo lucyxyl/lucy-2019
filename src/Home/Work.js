@@ -5,7 +5,6 @@ import Project from './Project';
 import Project1Cover from '../Image/Project1_Cover.png';
 import Project3Cover from '../Image/Project2_Cover.png';
 import Project2Cover from '../Image/Project3_Cover.png';
-// import Project4Cover from '../Image/Project4_Cover.png';
 
 const projects = [
   {
