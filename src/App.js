@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import ScrollToTop from './Shared/ScrollToTop';
-import logo from './Image/logo.svg';
+import logo from './Image/logo.png';
 import NavCTA from './Image/NavCTA.svg';
-import logow from './Image/logo-w.svg';
-import inlogo from './Image/in-logo.svg';
+import logow from './Image/logo-w.png';
+import inlogo from './Image/in-logo.png';
 import Nibbles from './Nibbles/Nibbles';
 import About from './About/About';
 import Index from './Home/Index';
@@ -108,14 +108,14 @@ class App extends React.Component {
             <Footer>
               <FooterBar>
                 <FooterItems>
-                  <Image src={logow} alt="light logo" />
+                  <Logo src={logow} alt="light logo" />
                 </FooterItems>
                 <FooterItems>
                   <FeatureText primary>Design & Code by Lucy.</FeatureText>
                 </FooterItems>
                 <FooterItems>
                   <a href="https://www.linkedin.com/in/lucyxylin" target="_blank" rel="noopener noreferrer">
-                    <Image src={inlogo} alt="linkedin logo" />
+                    <Logo src={inlogo} alt="linkedin logo" />
                   </a>
                 </FooterItems>
               </FooterBar>
@@ -126,7 +126,7 @@ class App extends React.Component {
     );
   }
 }
-const Image = styled.img`
+const Logo = styled.img`
   width: 100%;
   @media (min-width: 320px) and (max-width: 425px) {
     width: 80%;
@@ -168,6 +168,7 @@ const FooterBar = styled.ul`
   @media (min-width: 320px) and (max-width: 425px) {
     width: 90%;
     flex-direction: column;
+    justify-content: center;
   }
   @media (min-width: 426px) and (max-width: 768px) {
     width: 90%;

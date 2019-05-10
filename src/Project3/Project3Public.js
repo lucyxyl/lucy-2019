@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import Project3Intro from './Project-3-Intro';
 import Password3 from '../Shared/Password-Project3';
 
-const Project2Public = () => (
+const Project2Public = props => (
   <Content>
     <Project3Intro />
-    <Password3 />
+    <Password3 onAuthSuccess={props.onAuthSuccess} />
   </Content>
 );
 
