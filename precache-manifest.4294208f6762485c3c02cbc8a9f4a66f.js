@@ -476,16 +476,16 @@ self.__precacheManifest = [
     "url": "/lucy-2019/static/media/Project3_Fig30.c1d97b56.png"
   },
   {
-    "revision": "7ff2ca4e3f783746056e1dbcdd8e1f0e",
-    "url": "/lucy-2019/static/media/MinionProItalic.7ff2ca4e.ttf"
+    "revision": "38711b5bb243e894a6d58c8755bb034a",
+    "url": "/lucy-2019/static/media/MinionProRegular.38711b5b.otf"
   },
   {
     "revision": "461035ae352489b959c1c0fb4b1a9e92",
     "url": "/lucy-2019/static/media/MinionProBold.461035ae.ttf"
   },
   {
-    "revision": "38711b5bb243e894a6d58c8755bb034a",
-    "url": "/lucy-2019/static/media/MinionProRegular.38711b5b.otf"
+    "revision": "7ff2ca4e3f783746056e1dbcdd8e1f0e",
+    "url": "/lucy-2019/static/media/MinionProItalic.7ff2ca4e.ttf"
   },
   {
     "revision": "6bff1e8f4452618c853a083ba16263b8",
