@@ -480,12 +480,12 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/MinionProRegular.38711b5b.otf"
   },
   {
-    "revision": "461035ae352489b959c1c0fb4b1a9e92",
-    "url": "/my-app/static/media/MinionProBold.461035ae.ttf"
-  },
-  {
     "revision": "7ff2ca4e3f783746056e1dbcdd8e1f0e",
     "url": "/my-app/static/media/MinionProItalic.7ff2ca4e.ttf"
+  },
+  {
+    "revision": "461035ae352489b959c1c0fb4b1a9e92",
+    "url": "/my-app/static/media/MinionProBold.461035ae.ttf"
   },
   {
     "revision": "837704341fbd4723ef6af272a21d9fc9",
