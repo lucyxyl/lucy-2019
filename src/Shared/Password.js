@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import axios from 'axios';
 import { withRouter } from 'react-router';
 import ScrollToTop from './ScrollToTop';
 
@@ -13,14 +12,9 @@ class Password extends Component {
   }
 
   handleClick = () => {
-    axios
-      .get(`/authenticate.php?secret=${this.state.userSecret}`)
-      .then(response => {
-        if (response.data === true) {
-          this.props.onAuthSuccess();
-        }
-      })
-      .catch(error => console.log(error));
+    if(this.state.userSecret === 'broccoli') {
+      this.props.onAuthSuccess();
+    }
   };
 
   handleInput = event => {
