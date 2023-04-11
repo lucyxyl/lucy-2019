@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "849796b17d1253a1d0b1",
+    "revision": "7e4a96dde98b9df39f3f",
     "url": "/static/css/main.c90faee8.chunk.css"
   },
   {
-    "revision": "849796b17d1253a1d0b1",
-    "url": "/static/js/main.aed989e1.chunk.js"
+    "revision": "7e4a96dde98b9df39f3f",
+    "url": "/static/js/main.ceef9efb.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -488,7 +488,7 @@ self.__precacheManifest = [
     "url": "/static/media/MinionProBold.461035ae.ttf"
   },
   {
-    "revision": "e3390815003484f6a8652924e2488f65",
+    "revision": "0ac1e4c6dcbf252f0337d05a993f2255",
     "url": "/index.html"
   }
 ];
