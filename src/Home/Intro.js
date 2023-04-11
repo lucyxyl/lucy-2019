@@ -25,11 +25,10 @@ const Intro = () => {
         </IntroMiddle>
         <IntroDetails>
           <FeatureText>
-            A product designer with a knack for process & facilitation. <br />
+            👋🏼 — I'm a senior product designer based in San Francisco Bay Area. <br />
             <br />
-            Notably, I worked on // scaling the network visibility tools at Appneta // conceptualizing a surgical
-            ecosystem at Intuitive Surgical // creating an accessibility toolkit for healthcare design at SCAD //
-            among other things. <br />
+            Over the past 6 years, I’ve been fortunate enough to solve interesting problems at several different industries.
+            Most notably, I led 0-1 products at Alto pharmacy and Earnin, helped scale the network visibility tools at Appneta, and conceptualized a surgical ecosystem at Intuitive Surgical. <br />
             <br />
           </FeatureText>
         </IntroDetails>
