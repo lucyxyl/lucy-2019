@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "246bde98b85cdd0e7a29",
+    "revision": "f0c9ba5b1a3b8f55199e",
     "url": "/static/css/main.c90faee8.chunk.css"
   },
   {
-    "revision": "246bde98b85cdd0e7a29",
-    "url": "/static/js/main.eb6acbd7.chunk.js"
+    "revision": "f0c9ba5b1a3b8f55199e",
+    "url": "/static/js/main.14a70cb1.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -476,6 +476,10 @@ self.__precacheManifest = [
     "url": "/static/media/Project3_Fig30.c1d97b56.png"
   },
   {
+    "revision": "7ff2ca4e3f783746056e1dbcdd8e1f0e",
+    "url": "/static/media/MinionProItalic.7ff2ca4e.ttf"
+  },
+  {
     "revision": "38711b5bb243e894a6d58c8755bb034a",
     "url": "/static/media/MinionProRegular.38711b5b.otf"
   },
@@ -484,11 +488,7 @@ self.__precacheManifest = [
     "url": "/static/media/MinionProBold.461035ae.ttf"
   },
   {
-    "revision": "7ff2ca4e3f783746056e1dbcdd8e1f0e",
-    "url": "/static/media/MinionProItalic.7ff2ca4e.ttf"
-  },
-  {
-    "revision": "fe8cc1f322b937176462f6b60ef1daa0",
+    "revision": "3bd5304f3781d55bf858c1302e192d84",
     "url": "/index.html"
   }
 ];
