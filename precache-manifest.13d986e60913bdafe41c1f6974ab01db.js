@@ -476,12 +476,12 @@ self.__precacheManifest = [
     "url": "/static/media/Project3_Fig30.c1d97b56.png"
   },
   {
-    "revision": "38711b5bb243e894a6d58c8755bb034a",
-    "url": "/static/media/MinionProRegular.38711b5b.otf"
-  },
-  {
     "revision": "7ff2ca4e3f783746056e1dbcdd8e1f0e",
     "url": "/static/media/MinionProItalic.7ff2ca4e.ttf"
+  },
+  {
+    "revision": "38711b5bb243e894a6d58c8755bb034a",
+    "url": "/static/media/MinionProRegular.38711b5b.otf"
   },
   {
     "revision": "461035ae352489b959c1c0fb4b1a9e92",
